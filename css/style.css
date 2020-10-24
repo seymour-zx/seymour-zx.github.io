@@ -1,13 +1,24 @@
-* {padding: 0;
-  margin: 0;
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
 }
-body {background-clip: border-box;
+html {
+  width: 100vh;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  min-width: 100vh;/*继承宽度*/
+  min-height: 100vh;
+  overflow: hidden;/*超出隐藏，改scroll*/
   background-color: black;
   background-image: url("../background.jpg");
-	background-size: contain;
   background-position: center;
-  background-attachment: fixed; 
   background-repeat: no-repeat;
-
-  font-family:"Times New Roman", Times, serif;
+  background-attachment: fixed; 
+	background-size: cover;
+  background-clip: border-box;
 }
