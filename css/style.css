@@ -4,7 +4,7 @@
 body {background-clip: border-box;
   background-color: black;
   background-image: url("../background.jpg");
-	background-size: cover;
+	background-size: contain;
   background-position: center;
   background-attachment: fixed; 
   background-repeat: no-repeat;
