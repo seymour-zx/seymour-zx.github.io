@@ -1,24 +1,37 @@
-@charset "UTF-8";
-* {
+* {/*默认css样式*/
   padding: 0px;
   margin: 0px;
+  border: 0px;/**/
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  background-clip: padding-box;/*背景图像在线框范围内*/
+  background-origin: padding-box;/*背景图像的相对位置，线框内侧*/   
+  overflow: auto;/*hidden超出隐藏，改scroll则加滚轮*/ 
   font-family: "Times New Roman", Times, serif;
+  font-size: 40px;/*字体设置大小，单位rem,即是这里的倍数*/
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
 }
 html {
-  width: 100vh;
-  height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
 body {
-  min-width: 100vh;/*继承宽度*/
-  min-height: 100vh;
-  overflow: hidden;/*超出隐藏，改scroll*/
-  background-color: black;
-  background-image: url("../background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-	background-size: cover;
-  background-clip: border-box;
+  height: 100vh;/*等于屏幕的高度*/
+  width: 100vw;/*等于屏幕的高度*/
+  max-width: 100vw;/*等于屏幕的高度*/
+  max-height: 100vh;/*等于屏幕的高度*/  
+  background-image: url("../background.jpg");   
+}
+.newdiv {
+  width: 100%;
+  height: 100%;
+  background: none;
 }
