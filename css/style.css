@@ -28,7 +28,7 @@ body {
   width: 100vw;/*等于屏幕的高度*/
   max-width: 100vw;/*等于屏幕的高度*/
   max-height: 100vh;/*等于屏幕的高度*/  
-  background-image: url("../background.jpg");   
+  background-image: url("https://zhengxie.info/common/image/background.jpg");   
 }
 .newdiv {
   width: 100%;
