@@ -23,13 +23,13 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-image: url("https://zhengxie.info/common/image/background.jpg");
+  background-image: white;
   width: 300vw;/*等于屏幕的高度*/
   height: 100vh;/*等于屏幕的高度*/
   overflow-x: hidden;
 }
 article {
-  left: 0vw;
+  left: - 100vw;
   width: 100vw;
   height: 100vh;
   display: block;
@@ -57,7 +57,7 @@ label {
   height: 10vmin;  
 }
 #checkleftbar:checked ~ article{
-  left: -100vw;
+  left: 0;
 }
 h1 {
   color: aliceblue;
