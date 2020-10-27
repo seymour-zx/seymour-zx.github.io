@@ -23,23 +23,26 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-image: url("https://zhengxie.info/common/image/background.jpg");
-  width: 300vw;/*等于屏幕的高度*/
+  background-image: blue;
+  width: 100vw;/*等于屏幕的高度*/
   height: 100vh;/*等于屏幕的高度*/
   overflow-x: hidden;
+
 }
 article {
-  left: 0vw;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   display: block;
+  top: 0;
 }
 #homeleftbar{
-  float: left;  
   background:#063146;
+  left: 0;
 }
 #homemater{  
-  background: none;
+  background: green;
+  left: 100vw;
 }
 #homeleftbar header{
   height: 10vh;
@@ -56,8 +59,11 @@ label {
   width: 10vmin;
   height: 10vmin;  
 }
-#checkleftbar:checked ~ article{
+#checkleftbar:checked ~ #homeleftbar{
   left: -100vw;
+}
+#checkleftbar:checked ~ #homemater{
+  left: 0;
 }
 h1 {
   color: aliceblue;
