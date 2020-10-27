@@ -1,4 +1,4 @@
-* {/*默认css样式*/
+﻿* {/*默认css样式*/
   padding: 0px;
   margin: 0px;
   border: 0px;/**/
@@ -23,7 +23,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-image: blue;
+  background-image: url("https://zhengxie.info/common/image/background.jpg");
   width: 100vw;/*等于屏幕的高度*/
   height: 100vh;/*等于屏幕的高度*/
   overflow-x: hidden;
@@ -34,15 +34,15 @@ article {
   width: 100vw;
   height: 100vh;
   display: block;
-  top: 0;
+  top: 0vh;
 }
 #homeleftbar{
   background:#063146;
-  left: 0;
+  left: -100vw;
 }
 #homemater{  
-  background: green;
-  left: 100vw;
+  background: none;
+  left: 0vw;
 }
 #homeleftbar header{
   height: 10vh;
@@ -60,10 +60,10 @@ label {
   height: 10vmin;  
 }
 #checkleftbar:checked ~ #homeleftbar{
-  left: -100vw;
+  left: 0vw;
 }
 #checkleftbar:checked ~ #homemater{
-  left: 0;
+  left: 100vw;
 }
 h1 {
   color: aliceblue;
