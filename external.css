@@ -1,0 +1,92 @@
+html {
+    font-size: 16px;
+    background: rgb(3,2,4);
+}
+body {
+    margin: 0 auto;
+    width: 100vmin;
+    overflow-x: hidden;
+}
+.header-div {
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    background: rgb(130,36,30);
+}
+.header-div .header-a{    
+    color: rgb(243,215,55);
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.div-1 {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    background: rgb(3,2,4);
+    border-bottom: 1px solid rgba(130,36,30);
+}
+.div-1 .a-1 {    
+    color: rgb(244,241,237);
+    font-size: 1rem;
+}
+table {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    background: rgb(244,241,237);
+    border-bottom: 1px solid rgba(130,36,30);
+}
+table tr td{
+    border-bottom: 1px solid rgba(130,36,30);
+}
+table tr td a {
+    text-decoration: none;
+    color: rgb(3,2,4);
+}
+label {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;    
+    display: block;
+    color:rgb(243,215,55);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(130,36,30);
+}
+input[type="checkbox"] {
+    display: none;
+}
+#checktable:checked ~ .checktable {
+    display: none;
+}
+#checktable1:checked ~ .checktable1 {
+    display: none;
+}
+#checktable2:checked ~ .checktable2 {
+    display: none;
+}
+#checktable3:checked ~ .checktable3 {
+    display: none;
+}
+#checktable4:checked ~ .checktable4 {
+    display: none;
+}
+#checktable5:checked ~ .checktable5 {
+    display: none;
+}
+#checktable6:checked ~ .checktable6 {
+    display: none;
+}
+
+.footer-table {
+    background: none;
+    color:  rgb(244,241,237);
+    border-top: 1px solid rgba(130,36,30);
+}
+.footer-table a{
+    color:  rgb(244,241,237);
+}
