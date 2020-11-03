@@ -57,6 +57,9 @@ label {
     cursor: pointer;
     border-bottom: 1px solid rgba(130,36,30);
 }
+input[type="checkbox"] {
+    display: none;
+}
 #checktable:checked ~ .checktable {
     display: none;
 }
