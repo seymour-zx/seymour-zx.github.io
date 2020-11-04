@@ -1,4 +1,4 @@
-# Quick Link: https://zhengxie.info
+# Quick Link: https://zhengxie.info/
 ## Freshman
 
-# 技术交流：seymour.zx@foxmail.com 
+# 鎶�鏈氦娴侊細seymour.zx@foxmail.com 
