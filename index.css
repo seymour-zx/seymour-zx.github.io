@@ -38,15 +38,12 @@ body {
     font-size: 2rem;
     letter-spacing: 1px;
 }
-.stair .f1, .stair .f99{
+.stair .f1 {
   background-color: rgba(3,2,4,1);
   color:  rgba(244,241,237,1);
   text-align: center;
   height: 5vh;
   line-height: 5vh;
-}
-.stair .f1 a, .stair .f99 a{
-  color: rgba(244,241,237,1);
 }
 table {
   font-size: 1rem;
