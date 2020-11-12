@@ -1,68 +1,60 @@
 html {
   font-size: 16px;
+  background-color: rgba(3,2,4,1);
 }
 body {
   margin: 0 auto;
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: rgba(130,36,30,1);
 }
-.basement {
+div.building {
+  background-image: url(./common/image/background.jpg);
+  background-color: rgba(244,241,237,1);
   width: 100%;
-  min-height: 100%;
-  background-image: url(https://api.ixiaowai.cn/api/api.php);
-  /*动态托管，可换为自己的图片链接 url(./common/api/image.php) */
-  background-color: rgba(3,2,4,1);
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-}
-.basement .stair {
+}/*主视窗*/
+div.building div.entrance {
   width: 100%;
-  background: rgba(130,36,30,0.3);
-}
-.basement .room {
-  width: 100%;
-  background: rgba(243,215,55,0.3);
-}
-.stair .entrance {
-  text-align: center;
-  width: 100%;
+  text-align: center; 
+  background: rgba(130,36,30,1);
   height: 10vh;
   line-height: 10vh;
-  background: rgba(130,36,30);
-}
-.stair .entrance a{    
-    color: rgba(243,215,55);
+}/*标题栏*/
+div.entrance a{    
+    color: rgba(243,215,55,1);
     text-decoration: none;
     font-size: 2rem;
     letter-spacing: 1px;
-}
-.stair .f1 {
-  background-color: rgba(3,2,4,1);
-  color:  rgba(244,241,237,1);
-  text-align: center;
-  height: 5vh;
-  line-height: 5vh;
-}
-table {
+}/*标题*/
+div.building div.basement {
+  width: 100%;
+}/*内容主体*/
+div.basement div.stair {
+  width: 100%;
+}/*内容主体左侧*/
+div.stair table {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
   width: 100%;
   background: rgb(244,241,237);
+  border-bottom: 1px solid rgba(130,36,30);  
+}/**/
+div.stair table tr td{
   border-bottom: 1px solid rgba(130,36,30);
-}
-table tr td{
-  border-bottom: 1px solid rgba(130,36,30);
-}
-table tr td a {
+}/**/
+div.stair table tr td a {
   text-decoration: none;
   color: rgb(3,2,4);
-}
+}/**/
 input[type="checkbox"] {
   display: none;
-}
+}/**/
 label {
   width: 100%;
   height: 3rem;
@@ -72,41 +64,74 @@ label {
   color:rgb(243,215,55);
   cursor: pointer;
   border-bottom: 1px solid rgba(130,36,30);
-}
+}/**/
 #checktable:checked ~ .checktable {
   display: none;
-}
+}/**/
 #checktable1:checked ~ .checktable1 {
   display: none;
-}
+}/**/
 #checktable2:checked ~ .checktable2 {
   display: none;
-}
+}/**/
 #checktable3:checked ~ .checktable3 {
   display: none;
-}
+}/**/
 #checktable4:checked ~ .checktable4 {
   display: none;
-}
+}/**/
 #checktable5:checked ~ .checktable5 {
   display: none;
-}
+}/**/
 #checktable6:checked ~ .checktable6 {
   display: none;
-}
-.treasure {
+}/**/
+
+
+
+
+
+
+
+div.basement div.room {
   width: 100%;
-  height: 100vh;
-}
+}/*内容主体右侧*/
+div.treasure div {
+  width: 100%;
+}/*页底宝藏*/
+div.treasure div.view {
+  min-height: 100vh;
+}/*欣赏背图*/
+div.treasure div.version {
+  background-color: rgba(3,2,4,1);
+  color:  rgba(244,241,237,1);
+  text-align: center;
+  height: 5vh;
+  line-height: 5vh;
+}/*版本说明*/
 @media screen and (min-width: 768px){
-  .basement {
+  div.building div.basement {
     display: flex;
-  }
-  .basement .stair {
+  }/**/
+  div.basement div.stair {
     width: 38.2%;
-  }
-  .basement .room {
+  }/**/
+  div.basement div.room {
     width: 61.8%;
     float: right;
-  } 
-}
+  } /**/
+}/**/
+
+
+/*
+
+    <div class="stair">
+ 
+      <div class="f2">
+        
+      </div>
+
+
+  </div>
+
+*/
