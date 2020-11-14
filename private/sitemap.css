@@ -1,118 +1,291 @@
+input[type="checkbox"] {
+  display: none;
+}/**/
 html {
   font-size: 16px;
+  background-color: rgba(3,2,4,1);
 }
 body {
-  margin: 0 auto;
-  max-width: 100vw;
-  overflow-x: hidden;
+  background-color: rgba(130,36,30,1);
 }
 .basement {
-  width: 100%;
+  max-width: 100%;
   min-height: 100%;
-  background-image: url(https://api.ixiaowai.cn/api/api.php);
-  /*动态托管，可换为自己的图片链接 url(./common/api/image.php) */
-  background-color: rgba(3,2,4,1);
-  background-size: cover;
+  background-color: rgba(244,241,237,1);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-}
-.basement .stair {
-  width: 100%;
-  background: rgba(130,36,30,0.3);
-}
-.basement .room {
-  width: 100%;
-  background: rgba(243,215,55,0.3);
-}
-.stair .entrance {
-  text-align: center;
-  width: 100%;
-  height: 10vh;
-  line-height: 10vh;
-  background: rgba(130,36,30);
-}
-.stair .entrance a{    
-    color: rgba(243,215,55);
-    text-decoration: none;
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
-.stair .f1, .stair .f99{
-  background-color: rgba(3,2,4,1);
-  color:  rgba(244,241,237,1);
-  text-align: center;
-  height: 5vh;
-  line-height: 5vh;
-}
-.stair .f1 a, .stair .f99 a{
-  color: rgba(244,241,237,1);
-}
-table {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-align: center;
-  width: 100%;
-  background: rgb(244,241,237);
-  border-bottom: 1px solid rgba(130,36,30);
-}
-table tr td{
-  border-bottom: 1px solid rgba(130,36,30);
-}
-table tr td a {
-  text-decoration: none;
-  color: rgb(3,2,4);
-}
-input[type="checkbox"] {
-  display: none;
-}
-label {
-  width: 100%;
-  height: 3rem;
-  line-height: 3rem;
-  font-size: 1.5rem;    
-  display: block;
-  color:rgb(243,215,55);
-  cursor: pointer;
-  border-bottom: 1px solid rgba(130,36,30);
-}
-#checktable:checked ~ .checktable {
-  display: none;
-}
-#checktable1:checked ~ .checktable1 {
-  display: none;
-}
-#checktable2:checked ~ .checktable2 {
-  display: none;
-}
-#checktable3:checked ~ .checktable3 {
-  display: none;
-}
-#checktable4:checked ~ .checktable4 {
-  display: none;
-}
-#checktable5:checked ~ .checktable5 {
-  display: none;
-}
-#checktable6:checked ~ .checktable6 {
-  display: none;
-}
-#checkol:checked ~ .checkol {
-  display: none;
-}
-.treasure {
-  width: 100%;
-  height: 100vh;
-}
-@media screen and (min-width: 768px){
-  .basement {
-    display: flex;
+  background-size: cover;
+  background-image: url(../common/image/background.jpg);
+} /* wrapper */
+  .basement .entrance {
+    min-width: 100%;
   }
-  .basement .stair {
+    .entrance .r1 {
+      text-align: center;      
+    }
+      .r1 a {
+        text-decoration: none;
+        color: rgba(243,215,55,1);
+        font-size: 3rem;
+        line-height: 5rem;
+        letter-spacing: 1px;
+      }
+  .basement .f1 {
+    background-color: none;
+  } /* 1st floor */
+    .f1 .r1 {
+      background-color: none;
+    }/*快速访问*/
+      .f1 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f1 .r1 table tr td{
+        text-align: center;
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f1 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/
+  .basement .f2 {
+    background-color: none;
+  } /* 2nd floor */
+    .f2 .r1 {
+      background-color: none;
+    }/*站内快链*/
+      #f2r1table:checked ~ .f2r1table {
+        display: none;
+      }/*控制开关*/  
+      .f2 .r1 label {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);
+      }/*控制标签*/
+      .f2 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f2 .r1 table tr td{
+        text-align: center;
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f2 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/
+  .basement .f3 {
+    background-color: none;
+  } /* 3rd floor */
+    .f3 .r1 {
+      background-color: none;
+    }/*站内快链*/
+      #f3r1table:checked ~ .f3r1table {
+        display: none;
+      }/*控制开关*/  
+      .f3 .r1 label {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);
+      }/*控制标签*/
+      .f3 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f3 .r1 table tr td{
+        text-align: center;
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f3 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/      
+  .basement .f4 {
+    background-color: none;
+  } /* 2nd floor */
+    .f4 .r1 {
+      background-color: none;
+    }/*站内快链*/
+      #f4r1table:checked ~ .f4r1table {
+        display: none;
+      }/*控制开关*/  
+      .f4 .r1 label {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);
+      }/*控制标签*/
+      .f4 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f4 .r1 table tr td{
+        text-align: center;
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f4 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/
+  .basement .f5 {
+    background-color: none;
+  } /* 5st floor */
+    .f5 .r1 {
+      background-color: none;
+    }/*博文收藏*/
+      #f5r1table:checked ~ .f5r1table {
+        display: none;
+      }/*控制开关*/  
+      .f5 .r1 label {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);
+      }/*控制标签*/
+      .f5 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f5 .r1 table tr td{
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f5 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/
+  .basement .f6 {
+    background-color: none;
+  } /* 5st floor */
+    .f6 .r1 {
+      background-color: none;
+    }/*博文收藏*/
+      #f6r1table:checked ~ .f6r1table {
+        display: none;
+      }/*控制开关*/  
+      .f6 .r1 label {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);
+      }/*控制标签*/
+      .f6 .r1 table {
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);        
+      }/**/
+      .f6 .r1 table tr td{
+
+        border-bottom: 1px solid rgba(130,36,30,1);
+      }/**/
+      .f6 .r1 table tr td a {
+        text-decoration: none;
+        color: rgba(3,2,4,1);
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }/**/ 
+  .basement .f997 {
+    min-width: 100%;
+    color:  rgba(244,241,237,1);
+    background-color: rgba(3,2,4,0.6);
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .basement .f997 a {
+    color:  rgba(244,241,237,1);
+    text-decoration: none;
+  }
+  .basement .f998 {
+    min-width: 100%;
+    background-color: rgba(3,2,4,0.6);
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+  }
+  .basement .f998 a {
+    color:  rgba(244,241,237,1);
+    text-decoration: none;
+  }
+  .basement .f999 {
+    min-width: 100%;
+    background-color: rgba(3,2,4,0.6);
+    color:  rgba(244,241,237,1);
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+  }
+@media screen and (min-width: 720px){
+  .entrance .r1 {
     width: 38.2%;
   }
-  .basement .room {
-    width: 61.8%;
-    float: right;
-  } 
-}
+  .basement .f1 {
+    display: flex;
+  }/**/
+  .f1 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+  .f2 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+  .f3 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+  .f4 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+  .f5 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+  .f6 .r1 {
+    width: 38.2%;
+    margin: 0 auto;
+  }/**/
+}/**/
