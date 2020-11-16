@@ -9,11 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--选择引擎渲染网页-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><!--让网页的宽度自动适应屏幕的宽度-->
   <base target="_blank" /><!--链接默认新开页-->
-  <link href="./common/image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="../common/image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!--调用网页图标-->
-  <link href="./homepage.css" rel="stylesheet" type="text/css" />
+  <link href="./bookmark.css" rel="stylesheet" type="text/css" />
     <!--调用css样式-->
-  <title>颐亲王的小栈</title>
+  <title>个人书签</title>
   <meta name="author" content="华朝颐亲王郑協" />
   <meta name="keywords" content="个人,信息,导航,博客,网页,主页,网站,颐亲王,郑協" />
   <meta name="description" content="颐亲王的小栈" />
@@ -24,7 +24,7 @@
   <div class="main"><!--主楼-->
     <div class="entrance"><!--主楼入口-->
       <div class="title">        
-        <a title="返回首页" href="./homepage.html">颐亲王的小栈</a>
+        <a title="返回首页" href="../homepage.html">颐亲王的小栈</a>
           <!--标题-->
       </div>
     </div>
@@ -85,28 +85,28 @@
           <table class="f3r1table">      
             <tr><!--第 1 行-->
               <td style="width: 33%;">
-                <a href="./private/bookmark.html" title="">个人书签</a>  
+                <a href="../private/bookmark.html" title="">个人书签</a>  
               </td>
               <td style="width: 0.5%;">&nbsp;|&nbsp;</td>          
               <td style="width: 33%;">
-                <a href="./document/privacy.html" title="">隐私政策</a>
+                <a href="../document/privacy.html" title="">隐私政策</a>
               </td>
               <td style="width: 0.5%;">&nbsp;|&nbsp;</td>
               <td style="width: 33%;">
-                <a href="./game/index.html" title="">中国象棋</a>
+                <a href="../game/index.html" title="">中国象棋</a>
               </td>
             </tr>
             <tr><!--第 2 行-->
               <td style="width: 33%;">
-                <a href="./alpha/">alpha测试</a> 
+                <a href="../alpha/">alpha测试</a> 
               </td>
               <td style="width: 0.5%;">&nbsp;|&nbsp;</td>          
               <td style="width: 33%;">
-                <a href="./beta/">beta测试</a> 
+                <a href="../beta/">beta测试</a> 
               </td>
               <td style="width: 0.5%;">&nbsp;|&nbsp;</td>
               <td style="width: 33%;">
-                <a href="./gamma/">gamma测试</a> 
+                <a href="../gamma/">gamma测试</a> 
               </td>
             </tr>
           </table>
@@ -310,321 +310,9 @@
     </div>
   </div>
 <!--脚本-->
-  <script async src="./common/js/statistics.js" type="text/javascript"></script>    
+  <script async src="../common/js/statistics.js" type="text/javascript"></script>    
     <!--百度网页统计-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->
 </div>
 </body>
 </html>
-<!-- 
-
-  .basement .entrance {
-    min-width: 100%;
-  }
-    .entrance .r1 {
-      text-align: center;      
-    }
-      .r1 a {
-        text-decoration: none;
-        color: rgba(243,215,55,1);
-        font-size: 3rem;
-        line-height: 5rem;
-        letter-spacing: 1px;
-      }
-  .basement .f1 {
-    background-color: none;
-  } /* 1st floor */
-    .f1 .r1 {
-      background-color: none;
-    }/*快速访问*/
-      .f1 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f1 .r1 table tr td{
-        text-align: center;
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f1 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/
-  .basement .f2 {
-    background-color: none;
-  } /* 2nd floor */
-    .f2 .r1 {
-      background-color: none;
-    }/*站内快链*/
-      #f2r1table:checked ~ .f2r1table {
-        display: none;
-      }/*控制开关*/  
-      .f2 .r1 label {
-        width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.5rem;    
-        display: block;
-        color:rgba(243,215,55,1);
-        cursor: pointer;
-        border-bottom: 1px solid rgba(130,36,30);
-        background-color: rgba(3,2,4,0.6);
-      }/*控制标签*/
-      .f2 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f2 .r1 table tr td{
-        text-align: center;
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f2 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/
-  .basement .f3 {
-    background-color: none;
-  } /* 3rd floor */
-    .f3 .r1 {
-      background-color: none;
-    }/*站内快链*/
-      #f3r1table:checked ~ .f3r1table {
-        display: none;
-      }/*控制开关*/  
-      .f3 .r1 label {
-        width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.5rem;    
-        display: block;
-        color:rgba(243,215,55,1);
-        cursor: pointer;
-        border-bottom: 1px solid rgba(130,36,30);
-        background-color: rgba(3,2,4,0.6);
-      }/*控制标签*/
-      .f3 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f3 .r1 table tr td{
-        text-align: center;
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f3 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/      
-  .basement .f4 {
-    background-color: none;
-  } /* 2nd floor */
-    .f4 .r1 {
-      background-color: none;
-    }/*站内快链*/
-      #f4r1table:checked ~ .f4r1table {
-        display: none;
-      }/*控制开关*/  
-      .f4 .r1 label {
-        width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.5rem;    
-        display: block;
-        color:rgba(243,215,55,1);
-        cursor: pointer;
-        border-bottom: 1px solid rgba(130,36,30);
-        background-color: rgba(3,2,4,0.6);
-      }/*控制标签*/
-      .f4 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f4 .r1 table tr td{
-        text-align: center;
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f4 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/
-  .basement .f5 {
-    background-color: none;
-  } /* 5st floor */
-    .f5 .r1 {
-      background-color: none;
-    }/*博文收藏*/
-      #f5r1table:checked ~ .f5r1table {
-        display: none;
-      }/*控制开关*/  
-      .f5 .r1 label {
-        width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.5rem;    
-        display: block;
-        color:rgba(243,215,55,1);
-        cursor: pointer;
-        border-bottom: 1px solid rgba(130,36,30);
-        background-color: rgba(3,2,4,0.6);
-      }/*控制标签*/
-      .f5 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f5 .r1 table tr td{
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f5 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/
-  .basement .f6 {
-    background-color: none;
-  } /* 5st floor */
-    .f6 .r1 {
-      background-color: none;
-    }/*博文收藏*/
-      #f6r1table:checked ~ .f6r1table {
-        display: none;
-      }/*控制开关*/  
-      .f6 .r1 label {
-        width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.5rem;    
-        display: block;
-        color:rgba(243,215,55,1);
-        cursor: pointer;
-        border-bottom: 1px solid rgba(130,36,30);
-        background-color: rgba(3,2,4,0.6);
-      }/*控制标签*/
-      .f6 .r1 table {
-        width: 100%;
-        background-color: rgba(244,241,237,0.6);        
-      }/**/
-      .f6 .r1 table tr td{
-
-        border-bottom: 1px solid rgba(130,36,30,1);
-      }/**/
-      .f6 .r1 table tr td a {
-        text-decoration: none;
-        color: rgba(3,2,4,1);
-        font-size: 1rem;
-        height: 3rem;
-        line-height: 3rem;
-      }/**/ 
-  .basement .f997 {
-    min-width: 100%;
-    color:  rgba(244,241,237,1);
-    background-color: rgba(3,2,4,0.6);
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-  }
-  .basement .f997 a {
-    color:  rgba(244,241,237,1);
-    text-decoration: none;
-  }
-  .basement .f998 {
-    min-width: 100%;
-    background-color: rgba(3,2,4,0.6);
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-  }
-  .basement .f998 a {
-    color:  rgba(244,241,237,1);
-    text-decoration: none;
-  }
-  .basement .f999 {
-    min-width: 100%;
-    background-color: rgba(3,2,4,0.6);
-    color:  rgba(244,241,237,1);
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-  }
-@media screen and (min-width: 960px){
-  .entrance .r1 {
-    width: 38.2%;
-  }
-  .basement .f1 {
-    display: flex;
-  }/**/
-  .f1 .r1 {
-    width: 38.2%;
-    margin: 0 auto;
-  }/**/
-  .f2 .r1 {
-    width: 38.2%;
-    margin: 0 auto;
-  }/**/
-  .f3 .r1 {
-    width: 38.2%;
-    margin: 0 auto;
-  }/**/
-  .f4 .r1 {
-    width: 38.2%;
-    margin: 0 auto;
-  }/**/
-  .f5 .r1 {
-    width: 38.2%;
-    margin: 0 auto;
-  }/**/
-
-}
-
-
-
-
-
-input[type="checkbox"] {
-  display: none;
-}/**/
-label {
-  width: 100%;
-  height: 3rem;
-  line-height: 3rem;
-  font-size: 1.5rem;    
-  display: block;
-  color:rgb(243,215,55);
-  cursor: pointer;
-  border-bottom: 1px solid rgba(130,36,30);
-}/**/
-#checktable:checked ~ .checktable {
-  display: none;
-}/**/
-#checktable1:checked ~ .checktable1 {
-  display: none;
-}/**/
-#checktable2:checked ~ .checktable2 {
-  display: none;
-}/**/
-#checktable3:checked ~ .checktable3 {
-  display: none;
-}/**/
-#checktable4:checked ~ .checktable4 {
-  display: none;
-}/**/
-#checktable5:checked ~ .checktable5 {
-  display: none;
-}/**/
-#checktable6:checked ~ .checktable6 {
-  display: none;
-}/**/
-
-
- -->
