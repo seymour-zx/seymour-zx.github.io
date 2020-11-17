@@ -1,4 +1,4 @@
-input[type="checkbox"] {
+﻿input[type="checkbox"] {
   display: none;
 }/**/
 html {
@@ -16,7 +16,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(../common/image/background.jpg);
+  background-image: url(https://zhengxie.info/common/image/background.jpg);
 } /* wrapper */
   .basement .entrance {
     min-width: 100%;
