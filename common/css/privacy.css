@@ -16,7 +16,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(https://zhengxie.info/common/image/background.jpg);
+  background-image: url(../image/background.jpg);
 } /* wrapper */
   .basement .entrance {
     min-width: 100%;

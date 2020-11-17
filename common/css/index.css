@@ -12,7 +12,7 @@ input[type="checkbox"] {/**/display: none;}
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(https://zhengxie.info/common/image/background.jpg);
+  background-image: url(../image/background.jpg);
     /*背景图片*/}
 #plaque {/*<!--匾额-->*/
   display: flex;
