@@ -2,67 +2,82 @@
 html {background-color: rgba(243,215,55,1);} 黄色
 body {background-color: rgba(130,36,30,1);} 红色
 */
-body {margin: 0;}
+body {margin: 0;max-width: 100vw;overflow-x: hidden;}
 input[type="checkbox"] {/**/display: none;}
 .manor {/*<!--庄园-->*/
-  min-width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   min-height: 100%;
   background-color: rgba(244,241,237,1);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(../image/background.jpg);
-    /*背景图片*/}
-#plaque {/*<!--匾额-->*/
-  display: flex;
-  align-items: center;
-  justify-content:center;}
-  #plaque .text table {/*字体*/
-    text-align: center;
-    color: rgba(243,215,55,1);
-    font-size: 2rem;
-    border-collapse:collapse;/*显示边框*/}
-    #plaque .text table tr.mid {
-      border-top: 1px solid rgba(244,241,237,1); 
-      border-bottom: 1px solid rgba(244,241,237,1);}
-    #plaque .text table tr td.mid {
-      text-align-last: justify;/*两端对齐*/
-      color: rgba(244,241,237,1);
-      font-size: 1rem;}
-    #plaque .text table tr td.bottom {
-      font-size: 1rem;
-      text-align-last: justify;/*两端对齐*/}
-.menu {/*菜单栏*/
-  border-top: 1px solid rgba(130,36,30,1);
-  border-bottom: 1px solid rgba(130,36,30,1);
-  display: flex;
-  align-items: center;
-  justify-content:center;}
-  .menu > div {
-    line-height: 2.5rem;
-    width: 88px;
-    min-width: 12.5%;
-    max-width: 24%;
-    text-align: center;}
-    .menu > div a {
-      color: rgba(244,241,237,1);
-      text-decoration: none;}
-.castle {
-  background-color: rgba(130,36,30,0.3);
-  max-width: 100%;
-  min-height: 100%;
+  background-image: url(https://api.ixiaowai.cn/api/api.php);
+    /*背景图片*/
 }
-.treasure {/*宝藏*/min-width: 100%;}
-  .treasure .support {/*文档*//*知乎建站日志*//*版本说明*/
-    min-width: 100%;
-    color:  rgba(244,241,237,1);
-    background-color: rgba(3,2,4,0.6);
-    text-align: center;}
-  .treasure .support a {/*文档*//*知乎建站日志*//*版本说明*/
-    color:  rgba(244,241,237,1);
-    text-decoration: none;}
-/*
+  #plaque {/*<!--匾额-->*/
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(130,36,30,1);}
+    #plaque .text table {/*匾额字体*/   
+      border-collapse:collapse;/*显示边框*/
+      color: rgba(243,215,55,1);
+      font-size: 2rem;
+      text-align: center; 
+      vertical-align:middle !important; 
+      padding: 0;}
+      #plaque .text table tr{
+        text-align: center; 
+        vertical-align:middle !important;
+        padding: 0;}
+      #plaque .text table tr.top {  
+        border-top: 1px solid rgba(244,241,237,1);}   
+        #plaque .text table tr td {
+          text-align: center; 
+          vertical-align:middle !important;
+          padding: 0;}
+        #plaque .text table tr .mid {
+          font-size: 1rem;
+          color: rgba(244,241,237,1);}
+        #plaque .text table tr .r1r4 {
+          font-size: 1rem;
+          text-align-last: justify;
+        }
+  .menu {/*菜单栏*/
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(244,241,237,0.6);
+    border-top: 1px solid rgba(244,241,237,1);
+    border-bottom: 1px solid rgba(244,241,237,1);}
+    .menu > div {
+      text-align: center;
+      min-width: 12.5%;
+      max-width: 24%; 
+      width: 88px;
+      line-height: 2.5rem;}
+      .menu > div a {
+        color: rgba(3,2,4,1);
+        text-decoration: none;
+      }
+  .castle {/*城堡*/max-width: 100vw;overflow-x: hidden;display: flex;}
+  .treasure {/*宝藏*/max-width: 100vw;overflow-x: hidden;}
+    .treasure .support {/*文档*//*知乎建站日志*//*版本说明*/
+      margin: 0 auto;
+      color:  rgba(244,241,237,1);
+      background-color: rgba(3,2,4,0.6);
+      text-align: center;}
+      .treasure .support a {/*文档*//*知乎建站日志*//*版本说明*/
+        color:  rgba(244,241,237,1);
+        text-decoration: none;}
+
+        /*
 @media only screen and (min-width: 180px){
   .menu {
     }
@@ -71,4 +86,16 @@ input[type="checkbox"] {/**/display: none;}
   .menu > div {
     width: 100%;
     }
-}*/
+}        <table border="1" >
+          <tr><!--第 1 行-->
+            <td colspan="3" class="bottom">颐亲王的小栈</td>
+          </tr>
+          <tr class="mid" ><!--第 2 行-->
+            <td><strong>正协</strong><br /></td>
+            <td class="mid">信<br />息<br /></td>
+            <td><strong>客栈</strong><br /></td>
+          </tr>        
+          <tr><!--第 3 行-->
+            <td colspan="3" class="bottom">Z H E N G X I E . I N F O</td>
+          </tr>
+        </table>   */
