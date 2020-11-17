@@ -1,0 +1,90 @@
+/*
+html {background-color: rgba(243,215,55,1);} 黄色
+body {background-color: rgba(130,36,30,1);} 红色
+*/
+body {margin: 0;}
+input[type="checkbox"] {/**/display: none;}
+.manor {/*<!--庄园-->*/
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(244,241,237,1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(https://zhengxie.info/common/image/background.jpg);
+    /*背景图片*/}
+#plaque {/*<!--匾额-->*/
+  display: flex;
+  align-items: center;
+  justify-content:center;}
+  #plaque .text table {/*字体*/
+    text-align: center;
+    color: rgba(243,215,55,1);
+    font-size: 2rem;
+    border-collapse:collapse;/*显示边框*/}
+    #plaque .text table tr.mid {
+      border-top: 1px solid rgba(244,241,237,1); 
+      border-bottom: 1px solid rgba(244,241,237,1);}
+    #plaque .text table tr td.mid {
+      text-align-last: justify;/*两端对齐*/
+      color: rgba(244,241,237,1);
+      font-size: 1rem;}
+    #plaque .text table tr td.bottom {
+      font-size: 1rem;
+      text-align-last: justify;/*两端对齐*/}
+.menu {/*菜单栏*/
+  border-top: 1px solid rgba(130,36,30,1);
+  border-bottom: 1px solid rgba(130,36,30,1);
+  display: flex;
+  align-items: center;
+  justify-content:center;}
+  .menu > div {
+    line-height: 2.5rem;
+    width: 88px;
+    min-width: 12.5%;
+    max-width: 24%;
+    text-align: center;}
+    .menu > div a {
+      color: rgba(244,241,237,1);
+      text-decoration: none;}
+.castle {
+  background-color: rgba(130,36,30,0.3);
+  max-width: 100%;
+  min-height: 100%;
+}
+.treasure {/*宝藏*/min-width: 100%;}
+  .treasure .document {/*文档*/
+    min-width: 100%;
+    color:  rgba(244,241,237,1);
+    background-color: rgba(3,2,4,0.6);
+    text-align: center;}
+  .treasure .document a {/*文档*/
+    color:  rgba(244,241,237,1);
+    text-decoration: none;}
+  .treasure .log {/*知乎建站日志*/
+    min-width: 100%;
+    background-color: rgba(3,2,4,0.6);
+    text-align: center;} 
+  .treasure .log a {/*知乎建站日志*/
+    color:  rgba(244,241,237,1);
+    text-decoration: none;}
+  .treasure .version {/*版本说明*/
+    min-width: 100%;
+    background-color: rgba(3,2,4,0.6);
+    color:  rgba(244,241,237,1);
+    text-align: center;}
+    .treasure .version a {/*版本说明*/
+      color:  rgba(244,241,237,1);
+      text-decoration: none;}
+
+/*
+@media only screen and (min-width: 180px){
+  .menu {
+    }
+}
+@media only screen and (max-width: 180px){
+  .menu > div {
+    width: 100%;
+    }
+}*/
