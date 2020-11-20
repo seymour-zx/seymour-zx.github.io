@@ -1,4 +1,13 @@
-.manor {background: none;}
+.manor {  
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(244,241,237,1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../image/background.jpg);}
   .entrance {/*入口*/background: none;}
     #plaque {/*<!--匾额-->*/    
       display: flex;
@@ -54,11 +63,13 @@
   .cellar > div.main {/*地窖主体*/
     padding-left: 19.1%;
     padding-right: 19.1%;
-    width: 200%;
     max-width: 100%;
-    background: darkorchid;
-  }
 
+  }
+  article {
+    background-color: rgba(244,241,237,0.6);
+  }
+  
  
   .treasure {/*宝藏*/background: none;}
     .support {/*文档*//*知乎建站日志*//*版本说明*/
