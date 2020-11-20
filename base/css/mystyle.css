@@ -50,6 +50,7 @@ body {margin: 0;}
   .cellar {/*地窖*/min-width: 100%; max-width: 100%; overflow-x: hidden;}
     .cellar .main {/*地窖主体*/width: 100%;}
       .main article {
+        max-height: 100%; overflow-y: scroll;
         min-height: 100vh;
         background-color: rgba(244,241,237,0.6);
         padding: 32px;}
