@@ -8,7 +8,7 @@ body {margin: 0;}
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(../common/image/background.jpg);
+  background-image: url(../base/image/background.jpg);
     /*背景图片*/}
 .building .auxiliary {/*副楼*/background-color: rgba(130,36,30,1);}
 .building .main {/*主楼*/background: none;}
