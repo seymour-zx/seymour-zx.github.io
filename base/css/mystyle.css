@@ -1,9 +1,5 @@
 html {overflow: hidden;}
-body {margin: 0;width: 100vw; height: 100vh;overflow: hidden;}
-.manor {/*庄园*/
-  margin: 0; padding: 0; border: 0;
-  min-width: 100vw; max-width: 100vw; overflow-x: hidden;
-  min-height: 100vh; max-height: 100vh; overflow-y: auto;
+body {margin: 0;width: 100vw; height: 100vh;overflow: hidden;
   background-color: rgba(244,241,237,1);
   background-repeat: no-repeat;
   background-position: center;
@@ -11,6 +7,11 @@ body {margin: 0;width: 100vw; height: 100vh;overflow: hidden;}
   background-size: cover;
   /*background-image: url(../image/background.jpg);*/
   background-image: url(https://api.ixiaowai.cn/api/api.php);/*小歪API*/}
+.manor {/*庄园*/
+  margin: 0; padding: 0; border: 0;
+  min-width: 100vw; max-width: 100vw; overflow-x: hidden;
+  min-height: 100vh; max-height: 100vh; overflow-y: auto;
+}
   .entrance {/*入口*/min-width: 100%; max-width: 100%; overflow-x: hidden;}
     #plaque {/*<!--匾额-->*/
       display: flex; align-items: center; justify-content:center;/*div的子div居中*/
