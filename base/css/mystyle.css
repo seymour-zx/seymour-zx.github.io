@@ -1,8 +1,9 @@
-body {margin: 0;}
+
+body {margin: 0;width: 100vw; height: 100vh;}
 .manor {/*庄园*/
   margin: 0; padding: 0; border: 0;
   min-width: 100%; max-width: 100%; overflow-x: hidden;
-  min-height: 100%; max-height: 100%; overflow-y: scroll;
+  min-height: 100%; max-height: 100%; overflow-y: auto;
   background-color: rgba(244,241,237,1);
   background-repeat: no-repeat;
   background-position: center;
