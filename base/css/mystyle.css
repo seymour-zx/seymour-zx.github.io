@@ -1,4 +1,4 @@
-
+html {overflow: hidden;}
 body {margin: 0;width: 100vw; height: 100vh;}
 .manor {/*庄园*/
   margin: 0; padding: 0; border: 0;
