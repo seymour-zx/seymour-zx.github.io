@@ -50,7 +50,7 @@ body {margin: 0; min-width: 100vw; min-height: 100vh; overflow: hidden;}
           text-decoration: none;}
   .cellar {/*地窖*/width: 100%; overflow-x: hidden;}
     .cellar .main {/*地窖主体*/width: 100%;}
-      .main > div {        
+      .cellar .main > div {        
         background-color: rgba(244,241,237,0.6);
       }
       #bookmark{/*导航书签*/display: flex;}
@@ -82,9 +82,11 @@ body {margin: 0; min-width: 100vw; min-height: 100vh; overflow: hidden;}
                   font-size: 1rem;
                   height: 3rem;
                   line-height: 3rem;}
-      .article {/*文章内容*/
+      .cellar .main .article {/*文章内容*/
         min-height: 68vh;
         padding: 32px;}
+        .cellar .main .article h1 {/*文章内容*/
+          text-align: center;}
   .treasure {/*宝藏*/width: 100%; overflow-x: hidden;}
     .support {/*文档*//*版本测试*//*版本更新*/
       margin: 0 auto;
