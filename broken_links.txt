@@ -1,0 +1,7 @@
+https://zhengxie.info/document/homepage.html ( parent page: https://zhengxie.info/alpha/index.html )
+https://zhengxie.info/document/sitemap.html ( parent page: https://zhengxie.info/alpha/index.html )
+https://zhengxie.info/document/privacy.html ( parent page: https://zhengxie.info/alpha/index.html )
+https://zhengxie.info/document/disclaimer.html ( parent page: https://zhengxie.info/alpha/index.html )
+https://zhengxie.info/document/copyright.html ( parent page: https://zhengxie.info/alpha/index.html )
+https://zhengxie.info/homepage.html ( parent page: https://zhengxie.info/gamma/index.html )
+ 
