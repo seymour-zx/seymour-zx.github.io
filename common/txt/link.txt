@@ -1,0 +1,4 @@
+    <link href="./image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <!--调用网页图标-->
+    <link href="./css/mystyle.css" rel="stylesheet" type="text/css" />
+      <!--调用css样式-->

@@ -1,0 +1,4 @@
+    <title>关于</title>
+    <meta name="author" content="华朝颐亲王郑協" />
+    <meta name="keywords" content="个人,信息,导航,博客,网页,主页,网站,颐亲王,郑協" />
+    <meta name="description" content="颐亲王的小栈" />

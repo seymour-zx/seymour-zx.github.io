@@ -2,46 +2,8 @@
 <!--always hourly daily weekly monthly yearly never-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url><loc>https://zhengxie.info/</loc>    
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
+    <lastmod>2020-11-24T06:39:52+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority></url>
-  <url><loc>https://zhengxie.info/index.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority></url>
-  <url><loc>https://zhengxie.info/private/bookmark.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-  <url><loc>https://zhengxie.info/base/homepage.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-  <url><loc>https://zhengxie.info/base/about.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-  <url><loc>https://zhengxie.info/base/sitemap.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-
-  <url><loc>https://zhengxie.info/base/privacy.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-  <url><loc>https://zhengxie.info/base/disclaimer.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-  <url><loc>https://zhengxie.info/base/copyright.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority></url>
-
-  <url><loc>https://zhengxie.info/base/changelog.html</loc>
-    <lastmod>2020-11-21T06:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.69</priority></url>
 </urlset>
  
