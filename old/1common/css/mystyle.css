@@ -1,0 +1,133 @@
+html {
+  min-width: 100vw; min-height: 100vh;
+  overflow-x: hidden; overflow-y: auto;}
+body {margin: 0; min-width: 100vw; min-height: 100vh; overflow: hidden;}
+.manor {/*庄园*/
+  margin: 0; padding: 0; border: 0;
+  width: 100%; height: 100%; overflow-x: hidden;
+  background-color: rgba(244,241,237,1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-image: url(../image/background.jpg);*/
+  background-image: url(https://api.ixiaowai.cn/api/api.php);/*小歪API*/}
+  .entrance {/*入口*/width: 100%; overflow-x: hidden;}
+    #plaque {/*<!--匾额-->*/
+      display: flex; align-items: center; justify-content:center;/*div的子div居中*/
+      background-color: rgba(130,36,30,1);}
+      #plaque .text {background-color: rgba(130,36,30,0.6);}
+      #plaque .text table {/*匾额字体*/
+        border-collapse:collapse;/*显示边框*/
+        text-align: center; vertical-align:middle !important; padding: 0;/*单元格居中*/}
+        #plaque .text table tr{text-align: center; vertical-align:middle !important; padding: 0;/*单元格居中*/}
+          #plaque .text table tr.mid { 
+            border-top: 1px solid rgba(244,241,237,1); 
+            border-bottom: 1px solid rgba(244,241,237,1);}   
+          #plaque .text table tr td {
+            text-align: center; vertical-align:middle !important; padding: 0;/*单元格居中*/
+            font-size: 2rem;
+            color: rgba(243,215,55,1);}
+          #plaque .text table tr td.tb {
+            text-align: justify; text-align-last: justify;/*两端对齐*/
+            font-size: 1rem;}
+          #plaque .text table tr td.mid {
+            font-size: 1rem;
+            color: rgba(244,241,237,1);}
+    .indicator {/*指示牌*/
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      display: flex; align-items: center; justify-content:center;/*div的子div居中*/
+      background-color: rgba(244,241,237,0.6);
+      border-top: 1px solid rgba(253,118,35,1);
+      border-bottom: 1px solid rgba(253,118,35,1);}
+      .indicator > div {
+        width: 100%;
+        text-align: center;}
+        .indicator > div a {
+          color: rgba(3,2,4,1);
+          text-decoration: none;}
+  .cellar {/*地窖*/width: 100%; overflow-x: hidden;}
+    .cellar .main {/*地窖主体*/width: 100%;}
+      .cellar .main > div {        
+        background-color: rgba(244,241,237,0.6);
+      }
+      #bookmark{/*导航书签*/display: flex;}
+        #bookmark .wrapper{/*隔层居中*/margin: 0 auto;}
+          #bookmark .wrapper .container{/*表格容器*/width: 61.8vh; max-width: 100vw;}
+            #bookmark .wrapper .container > input[type="checkbox"] {/*隐藏复选框*/display: none;}
+            #bookmark .wrapper .container > input:checked + table {/*隐藏table初始化*/display: none;} 
+            #bookmark .wrapper .container label {/*控制标签*/
+              width: 100%;
+              height: 3rem;
+              line-height: 3rem;
+              font-size: 1.5rem;    
+              display: block;
+              color:rgba(243,215,55,1);
+              cursor: pointer;
+              border-bottom: 1px solid rgba(130,36,30);
+              background-color: rgba(3,2,4,0.6);}
+            #bookmark .wrapper .container table {/*表格*/
+              width: 100%;
+              background-color: rgba(244,241,237,0.6);}
+              #bookmark .wrapper .container table tr td{/*表格列*/
+                text-align: center;
+                border-bottom: 1px solid rgba(130,36,30,1);}
+              #bookmark .wrapper .container1 table tr td{/*表格1列*/
+                text-align: left;}
+                #bookmark .wrapper .container table tr td a {/*列标签*/
+                  text-decoration: none;
+                  color: rgba(3,2,4,1);
+                  font-size: 1rem;
+                  height: 3rem;
+                  line-height: 3rem;}
+      .cellar .main .article {/*文章内容*/
+        min-height: 68vh;
+        padding: 32px;}
+        .cellar .main .article h1 {/*文章内容*/
+          text-align: center;}
+  .treasure {/*宝藏*/width: 100%; overflow-x: hidden;}
+    .support {/*文档*//*版本测试*//*版本更新*/
+      margin: 0 auto;
+      padding-top: 3px;
+      padding-bottom: 3px;      
+      color: rgba(244,241,237,1);
+      background-color: rgba(3,2,4,0.6);
+      text-align: center;}
+      .support a {/*文档*//*版本测试*//*版本更新*/
+        color:  rgba(244,241,237,1);
+        text-decoration: none;}
+  
+
+@media only screen and (min-device-aspect-ratio: 1/1){
+  .entrance {display: flex;}
+    #plaque {min-width: 38.2vw;}
+  .cellar {/*地窖*/display: flex;}
+}
+@media only screen and (min-width: 450px){
+  .entrance {display: flex;}
+    #plaque {min-width: 38.2vw;}
+  .cellar {/*地窖*/display: flex;}
+}
+  /*      
+
+*/
+
+
+
+  /*      
+未使用
+*/
+input[type="checkbox"] {display: none;}
+input:checked + div {/*隐藏table初始化*/
+  display: none;}  
+  input:checked + div label:before {/*隐藏table初始化*/
+    display: block;}  
+    input:checked + div label:after {/*隐藏table初始化*/
+      display: none;}  
+ label {/*控制标签*/
+  display: block;
+  color:rgba(243,215,55,1);
+  cursor: pointer;
+ }

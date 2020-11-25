@@ -1,0 +1,29 @@
+    <div class="cellar"><!--地窖-->   
+      <div class="main"><!--地窖主体-->
+<!--相对内容--> 
+        <div class="article about">
+          <h1>关于</h1>
+          <div class="support"><!--修改日期-->&lt;&nbsp;修改日期：2020-11-21 10:00&nbsp;&gt;</div>
+          
+        </div>
+<!--相对内容-->
+      </div>
+    </div>
+    <div class="treasure"><!--宝藏-->
+      <div class="support"><!--文档-->
+        <a href="https://zhengxie.info/base/privacy.html" title="" target="_self">隐私保护</a>
+        &nbsp;|&nbsp;
+        <a href="https://zhengxie.info/base/disclaimer.html" title="" target="_self">免责声明</a>
+        &nbsp;|&nbsp;
+        <a href="https://zhengxie.info/base/copyright.html" title="" target="_self">版权协议</a>
+      </div>
+      <div class="support"><!--版本更新-->&lt;&nbsp;版本更新：2020-11-21 18:00&nbsp;&gt;</div>
+      <div class="support"><!--版本测试-->
+          测试版本：
+          <a href="https://zhengxie.info/alpha/index.html" title="" target="_self">alpha</a>
+          &nbsp;|&nbsp;
+          <a href="https://zhengxie.info/beta/index.html" title="" target="_self">beta</a>
+          &nbsp;|&nbsp;
+          <a href="https://zhengxie.info/gamma/index.html" title="" target="_self">gamma</a>
+      </div>
+    </div>

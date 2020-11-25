@@ -1,0 +1,79 @@
+  <!doctype html />
+  <html lang="zh" dir="ltr" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" /><!--允许检索-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><!--禁止转码，防贴广告-->
+    <meta http-equiv="Pragma" content="no-cache" /><!--禁止脱机浏览-->
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" /><!--浏览模式自动三选一-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--选择引擎渲染网页-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><!--让网页的宽度自动适应屏幕的宽度-->
+    <base target="_blank" /><!--链接默认新开页-->
+<!--相对内容-->
+    <link href="./image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <!--调用网页图标-->
+    <link href="./css/mystyle.css" rel="stylesheet" type="text/css" />
+      <!--调用css样式-->
+    <title>关于</title>
+    <meta name="author" content="华朝颐亲王郑協" />
+    <meta name="keywords" content="个人,信息,导航,博客,网页,主页,网站,颐亲王,郑協" />
+    <meta name="description" content="颐亲王的小栈" />
+<!--相对内容-->
+  </head>
+  <body>
+  <div class="manor"><!--庄园-->
+    <div class="entrance"><!--入口-->
+      <div id="plaque"><!--匾额-->
+        <div class="text"><!--匾额字体-->
+          <table>
+            <tr><td colspan="3" class="tb">颐亲王的小栈</td></tr>
+            <tr class="mid"><td><strong>正协</strong></td><td class="mid">信<br />息</td><td><strong>客栈</strong></td></tr>        
+            <tr><td colspan="3" class="tb">Z H E N G X I E . I N F O</td></tr>
+          </table>  
+        </div>
+      </div>
+      <div class="indicator"><!--指示牌-->
+        <div><a href="https://zhengxie.info/base/homepage.html" title="返回主页" target="_self">主页</a></div>
+        <div><a href="https://zhengxie.info/base/about.html" title="" target="_self">关于</a></div>
+        <div><a href="https://zhengxie.info/base/sitemap.html" title="" target="_self">站点地图</a></div>
+        <div><a href="https://zhengxie.info/private/bookmark.html" title="" target="_self">个人书签</a></div>
+      </div>
+    </div>  
+    <div class="cellar"><!--地窖-->   
+      <div class="main"><!--地窖主体-->
+<!--相对内容--> 
+        <div class="article about">
+          <h1>关于</h1>
+          <div class="support"><!--修改日期-->&lt;&nbsp;修改日期：2020-11-21 10:00&nbsp;&gt;</div>
+          
+        </div>
+<!--相对内容-->
+      </div>
+    </div>
+    <div class="treasure"><!--宝藏-->
+      <div class="support"><!--文档-->
+        <a href="https://zhengxie.info/base/privacy.html" title="" target="_self">隐私保护</a>
+        &nbsp;|&nbsp;
+        <a href="https://zhengxie.info/base/disclaimer.html" title="" target="_self">免责声明</a>
+        &nbsp;|&nbsp;
+        <a href="https://zhengxie.info/base/copyright.html" title="" target="_self">版权协议</a>
+      </div>
+      <div class="support"><!--版本更新-->&lt;&nbsp;版本更新：2020-11-21 18:00&nbsp;&gt;</div>
+      <div class="support"><!--版本测试-->
+          测试版本：
+          <a href="https://zhengxie.info/alpha/index.html" title="" target="_self">alpha</a>
+          &nbsp;|&nbsp;
+          <a href="https://zhengxie.info/beta/index.html" title="" target="_self">beta</a>
+          &nbsp;|&nbsp;
+          <a href="https://zhengxie.info/gamma/index.html" title="" target="_self">gamma</a>
+      </div>
+    </div>
+  <!--脚本-->
+<!--相对内容-->
+    <script async src="./js/statistics.js" type="text/javascript"></script>
+      <!--百度网页统计-->
+<!--相对内容-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->
+  </div>
+  </body>
+  </html>
