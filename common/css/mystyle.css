@@ -107,7 +107,6 @@ header {/*头顶*/
 @media only screen and (min-width: 650px){
   header {/*头顶*/display: flex;}
     header > .wrapper + .wrapper {min-width: 61.8%;}
-
     main {width: auto;}
-    main article {max-width: 61.8vw;}
+    main article {max-width: 61.8vw;min-width: 61.8vw;}
 }

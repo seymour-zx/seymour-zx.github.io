@@ -1,4 +1,0 @@
-  <!doctype html />
-  <html lang="zh" dir="ltr" translate="no">
-  <head>
-    <meta charset="utf-8" />
