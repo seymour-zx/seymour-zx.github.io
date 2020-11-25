@@ -108,5 +108,7 @@ header {/*头顶*/
   header {/*头顶*/display: flex;}
     header > .wrapper + .wrapper {min-width: 61.8%;}
     main {width: auto;}
-    main article {max-width: 61.8vw;min-width: 61.8vw;}
+    main article {
+      width: 61.8vw;      
+    }
 }
