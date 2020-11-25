@@ -77,24 +77,37 @@ header {/*头顶*/
     }/*菜单*/
 .heart {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* div垂直居中 */
   justify-content:center;
-  min-height: calc(100vh - 142px - 63px);}  
-  main {
+
+}  
+  nav {
+    background: none;
+  }
+  main {    
     width: 100%;
   }
-
+    article {      
+      padding: 16px;
+      background-color: rgba(244,241,237,0.8);
+    }
+      article h1 {
+        text-align:center;
+        /* 内容水平居中 */
+        color: rgba(3,2,4,1);
+      }
+      article p {
+        color: rgba(3,2,4,1);
+      }
+  aside {
+    background: none;
+  }
 
 @media only screen and (min-width: 650px){
   header {/*头顶*/display: flex;}
     header > .wrapper + .wrapper {min-width: 61.8%;}
-  .heart {min-height: calc(100vh - 100px - 63px);} 
+
+    main {width: auto;}
+    main article {max-width: 61.8vw;}
 }
-
-
-
-
-/*
-
-
- */
