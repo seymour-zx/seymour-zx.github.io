@@ -1,114 +1,106 @@
-.support {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  background-color: rgba(37,86,122,1);
-  color: rgba(244,241,237,1);}
-  .support * {
-    text-align: center;
-    align-items: center;
-    justify-content:center;
-    color: rgba(244,241,237,1);
-    text-decoration: none;
-  }
 body {
-  background-color: rgba(10, 146, 67, 0.3);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /*background-image: url(../image/background.jpg);*/
-  background-image: url(https://api.ixiaowai.cn/api/api.php);/*小歪API*/
+  background-color: rgba(1, 61, 26, 0.5);
+  background-image: url(https://api.ixiaowai.cn/api/api.php);
+  /* 小歪API */
+  /* background-image: url(../image/background.jpg); */
 }
-header {/*头顶*/
-  align-items: center;
-  justify-content:center;
-  background-color: rgba(130,36,30,1);}
-  header > .wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center;}
-  .plaque {/*匾额*/
-    border-collapse:collapse;/*显示边框*/}
-    .plaque * {
-      margin: 0; padding: 0; border: none;
-      text-align: center;
-      vertical-align:middle !important;
-      color: rgba(243,215,55,1);}
-    .plaque .logo {
+header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
+  div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
+    table.plaque {border-collapse: collapse;/* 显示边框 */}
+    td.logo {
       width: 5rem;
       height: 5rem;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url(../image/favicon.ico);}
-    .plaque .logo + * {
-      text-align: justify;
-      text-align-last: justify;}
-    .plaque .mtr {
-      font-size: 2rem;
-      font-weight: bolder;
-      border-top: 1px solid rgba(244,241,237,1);
-      border-bottom: 1px solid rgba(244,241,237,1);}
-    .plaque .mtd {
-      font-size: 1rem;
-      font-weight: normal;
-      color: rgba(244,241,237,1);
-    }/*匾额*/
-  .menu {/*菜单*/
-    border-collapse:collapse;/*显示边框*/
-    width: 100%;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    margin-top: 4px;
-    margin-bottom: 4px;}
-    .menu * {
+    table.plaque * {
+      margin: 0; padding: 0; border: none;
+      text-align: center;
+      vertical-align:middle !important;
+      color: rgba(243,215,55,1);}
+    td.logo + td {text-align: justify; text-align-last: justify;}
+    tr.mid {font-size: 2rem; font-weight: bolder; border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1);}
+    td.mid {font-size: 1rem; font-weight: normal; color: rgba(244,241,237,1);}
+  div.menu {width: 100%; display: flex; align-items: center; justify-content:center;}
+    table.menu {
+      width: 100%;
+      border-collapse: collapse;/* 显示边框 */
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin-top: 4px;
+      margin-bottom: 4px;}
+    table.menu * {
       margin: 0; padding: 0; border: none;
       text-align: center;
       vertical-align:middle !important;            
       text-decoration: none;
       width: 25%;
       color: rgba(244,241,237,1);}
-    .menu tr {
-      border-top: 1px solid rgba(244,241,237,1);
-      border-bottom: 1px solid rgba(244,241,237,1);
-    }/*菜单*/
-.heart {
-  display: flex;
-  /* align-items: center; */
-  /* div垂直居中 */
-  justify-content:center;
-
-}  
-  nav {
-    background: none;
-  }
-  main {    
-    width: 100%;
-  }
-    article {      
+    .menu tr {border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1);}
+.central {width: 100%; display: flex; align-items: center; justify-content:center;}
+  main {width: 100%;}
+    main article {
       padding: 16px;
       background-color: rgba(244,241,237,0.8);
     }
-      article h1 {
-        text-align:center;
-        /* 内容水平居中 */
-        color: rgba(3,2,4,1);
-      }
-      article p {
-        color: rgba(3,2,4,1);
-      }
-  aside {
-    background: none;
-  }
-
-@media only screen and (min-width: 650px){
-  header {/*头顶*/display: flex;}
-    header > .wrapper + .wrapper {min-width: 61.8%;}
-    main {width: auto;}
-    main article {
-      width: 61.8vw;      
+    main h1 {text-align:center; color: rgba(3,2,4,1);}
+    main p {
+      color: rgba(3,2,4,1);
     }
+footer {width: 100%;}
+.support {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: rgba(244,241,237,1);
+  background-color: rgba(37,86,122,1);
+  }
+  .support a {color: rgba(244,241,237,1); text-decoration: none;}
+
+
+
+  #bookmark{/*导航书签*/display: flex;}
+  #bookmark .wrapper{/*隔层居中*/margin: 0 auto;}
+    #bookmark .wrapper .container{/*表格容器*/width: 61.8vh; max-width: 100vw;}
+      #bookmark .wrapper .container > input[type="checkbox"] {/*隐藏复选框*/display: none;}
+      #bookmark .wrapper .container > input:checked + table {/*隐藏table初始化*/display: none;} 
+      #bookmark .wrapper .container label {/*控制标签*/
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;    
+        display: block;
+        color:rgba(243,215,55,1);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(130,36,30);
+        background-color: rgba(3,2,4,0.6);}
+      #bookmark .wrapper .container table {/*表格*/
+        width: 100%;
+        background-color: rgba(244,241,237,0.6);}
+        #bookmark .wrapper .container table tr td{/*表格列*/
+          text-align: center;
+          border-bottom: 1px solid rgba(130,36,30,1);}
+        #bookmark .wrapper .container1 table tr td{/*表格1列*/
+          text-align: left;}
+          #bookmark .wrapper .container table tr td a {/*列标签*/
+            text-decoration: none;
+            color: rgba(3,2,4,1);
+            font-size: 1rem;
+            height: 3rem;
+            line-height: 3rem;}
+
+
+
+
+
+@media only screen and (min-width: 688px){
+  header {display: flex;}
+    .menu {min-width: 61.8%;}
+  main {max-width: 61.8%;}
 }

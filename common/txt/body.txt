@@ -1,40 +1,11 @@
+  <base target="_blank" /><!--链接默认新开页-->
+  <meta name="robots" content="all" /><!--允许检索-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" /><!--禁止转码，防贴广告-->
+  <meta http-equiv="Pragma" content="no-cache" /><!--禁止脱机浏览-->
+  <meta name="renderer" content="webkit|ie-comp|ie-stand" /><!--浏览模式自动三选一-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--选择引擎渲染网页-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><!--让网页的宽度自动适应屏幕的宽度-->
+  <meta name="apple-mobile-web-app-capable" content="yes" /><!--设置Web应用是否以全屏模式运行-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="blank-translucent" /><!--顶部状态栏背景色-->
+</head>
 <body>
-  <header><!--头顶-->
-    <div class="wrapper"><!--匾额-->
-      <table class="plaque"><!--匾额-->
-        <tr>
-          <td class="logo" rowspan="3"></td>
-          <td colspan="3">颐亲王的小栈</td>
-        </tr>
-        <tr class="mtr">
-          <td>正协</td>
-          <td class="mtd">信<br />息</td>
-          <td>客栈</td>
-        </tr>
-        <tr><td colspan="3">Z H E N G X I E . I N F O</td></tr>
-      </table>
-    </div>
-    <div class="wrapper"><!--菜单-->
-      <table class="menu">
-        <tr>
-          <td>
-            <a href="https://zhengxie.info/base/homepage/" title="返回主页" target="_self">主页</a>
-          </td>
-          <td>
-            <a href="https://zhengxie.info/base/about/" title="" target="_self">关于</a>
-          </td>
-          <td>
-            <a href="https://zhengxie.info/base/sitemap/" title="站点目录" target="_self">地图</a>
-          </td>
-          <td>
-            <a href="https://zhengxie.info/private/bookmark/" title="私有书签" target="_self">书签</a>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </header>
-  <div class="heart"><!--中心-->
-    <nav>
-
-    </nav>
-    <main>
