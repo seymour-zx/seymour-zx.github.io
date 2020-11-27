@@ -12,7 +12,7 @@
     <div class="support"><!--版本更新-->      
       &nbsp;|&nbsp;
       &lt;&nbsp;
-      版本更新：<lastmod>2020-11-27T09:01:28+00:00</lastmod>
+      版本更新：<lastmod>2020-11-27T17:21:14+00:00</lastmod>
       &nbsp;&gt;
       &nbsp;|&nbsp;
     </div>

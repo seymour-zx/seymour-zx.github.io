@@ -1,4 +1,4 @@
-  <script type="text/javascript">
+﻿  <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -8,5 +8,3 @@
     })();
   </script><!--百度统计-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->
-</body>
-</html>
