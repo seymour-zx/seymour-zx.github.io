@@ -1,3 +1,4 @@
+
   <footer><!--足底-->
     <div class="support"><!--基础文档-->      
       &lt;&nbsp;
@@ -11,7 +12,7 @@
     <div class="support"><!--版本更新-->      
       &nbsp;|&nbsp;
       &lt;&nbsp;
-      版本更新：2020-11-21 10:00
+      版本更新：<lastmod>2020-11-27T09:01:28+00:00</lastmod>
       &nbsp;&gt;
       &nbsp;|&nbsp;
     </div>
@@ -26,15 +27,4 @@
       &nbsp;&gt;
     </div>
   </footer>
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?70e38224e5ebd850150b00a19835a25f";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script><!--百度统计-->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->
-</body>
-</html>
+    
