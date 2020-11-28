@@ -149,9 +149,12 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines('\n  <div class="central">')
         fw.writelines('\n    <main>')
         fw.writelines('\n      <article>')
-        fw.writelines('\n      <div class="tag">\n标签tag：')
-        fw.writelines(readinfo('tag.txt', indexdir))
-        fw.writelines('\n      </div>')
+        if readinfo('tag.txt', indexdir)=="":
+            pass
+        else:
+            fw.writelines('\n      <div class="tag">\n标签tag：')
+            fw.writelines(readinfo('tag.txt', indexdir))
+            fw.writelines('\n      </div>')
         fw.writelines(readinfo('article.txt', indexdir))
         fw.writelines('\n      </article>')  
         fw.writelines('\n    </main>')
@@ -159,7 +162,7 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines(readinfo('footer.txt', txtdir))
         fw.writelines(readinfo('script.txt', txtdir))
         fw.writelines(readinfo('html.txt', txtdir))
-    webbrowser.open(path,new = 0, autoraise=True)
+    # webbrowser.open(path,new = 0, autoraise=True)
 
 def execute(pydir):
     txtdir = openpath("../txt")
