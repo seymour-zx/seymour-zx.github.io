@@ -10,11 +10,11 @@ def common_txt(txtdir):
     strtime = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime())
     message = """
     <div class="support"><!--版本更新-->      
-      &nbsp;|&nbsp;
+      |&nbsp;
       &lt;&nbsp;
       版本更新：%s+00:00
       &nbsp;&gt;
-      &nbsp;|&nbsp;
+      &nbsp;|
     </div>
 """%(strtime)    
     with open(path, 'w', encoding='utf-8') as fw:
