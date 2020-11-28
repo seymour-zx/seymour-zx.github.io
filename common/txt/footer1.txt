@@ -1,0 +1,10 @@
+
+    <div class="support"><!--基础文档-->      
+      &lt;&nbsp;
+      <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私保护</a>      
+      &nbsp;|&nbsp;
+      <a href="https://zhengxie.info/base/disclaimer/" title="" target="_self">免责声明</a>
+      &nbsp;|&nbsp;
+      <a href="https://zhengxie.info/base/copyright/" title="" target="_self">版权协议</a>
+      &nbsp;&gt;
+    </div>

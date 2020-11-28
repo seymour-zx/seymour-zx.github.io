@@ -1,0 +1,11 @@
+
+    <div class="support"><!--版本测试-->
+      &lt;&nbsp;
+      测试版本：
+      <a href="https://zhengxie.info/alpha/" title="" target="_self">alpha</a>
+      &nbsp;|&nbsp;
+      <a href="https://zhengxie.info/beta/" title="" target="_self">beta</a>
+      &nbsp;|&nbsp;
+      <a href="https://zhengxie.info/gamma/" title="" target="_self">gamma</a>
+      &nbsp;&gt;
+    </div>
