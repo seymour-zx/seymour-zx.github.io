@@ -16,7 +16,7 @@ def common_txt(txtdir):
       &nbsp;&gt;
       &nbsp;|
     </div>
-"""%(strtime)    
+"""%(strtime)
     with open(path, 'w', encoding='utf-8') as fw:
         fw.writelines(message)
     print("创建common-txt：", os.path.abspath(path))
@@ -82,6 +82,22 @@ def self_txt(htmldir, indexdir):
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
+    # 创建"lastmod.txt"
+    path = openpath("lastmod.txt", indexdir)
+    if not os.path.exists(path):
+        strtime = time.strftime("%Y-%m-%d", time.gmtime())
+        message = "%s"%(strtime)
+        with open(path, 'w', encoding='utf-8') as fw:
+            fw.writelines(message)
+        print("创建self-txt：", os.path.abspath(path))
+    # 创建"tag.txt"
+    path = openpath("tag.txt", indexdir)
+    if not os.path.exists(path):
+        strtime = time.strftime("%Y", time.gmtime())
+        message = '<a href="https://zhengxie.info/base/tag/%s/" title="" target="_self">%s</a>'%(strtime, strtime)
+        with open(path, 'w', encoding='utf-8') as fw:
+            fw.writelines(message)
+        print("创建self-txt：", os.path.abspath(path))
 
 def openpath(file, dirf=""):
     path = os.path.join(dirf, file)
@@ -133,8 +149,11 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines('\n  <div class="central">')
         fw.writelines('\n    <main>')
         fw.writelines('\n      <article>')
+        fw.writelines('\n      <div class="tag">\n标签tag：')
+        fw.writelines(readinfo('tag.txt', indexdir))
+        fw.writelines('\n      </div>')
         fw.writelines(readinfo('article.txt', indexdir))
-        fw.writelines('\n      </article>')
+        fw.writelines('\n      </article>')  
         fw.writelines('\n    </main>')
         fw.writelines('\n  </div>')
         fw.writelines(readinfo('footer.txt', txtdir))
@@ -168,29 +187,18 @@ if __name__ == "__main__":
     pydir = input("按Enter关闭窗口......")
 
 
-# # 网址拼接
+# 网址拼接
 
-# # from urllib.parse import urljoin
-# # a = urljoin("https://zhengxie.info/folder/currentpage.html", "../")  
+# from urllib.parse import urljoin
+# a = urljoin("https://zhengxie.info/folder/currentpage.html", "../")  
 
-# # b = urljoin("https://zhengxie.info/folder/currentpage.html", "folder2/anotherpage.html")  
+# b = urljoin("https://zhengxie.info/folder/currentpage.html", "folder2/anotherpage.html")  
 
-# # c = urljoin("https://zhengxie.info/folder/currentpage.html", "/folder3/anotherpage.html")  
+# c = urljoin("https://zhengxie.info/folder/currentpage.html", "/folder3/anotherpage.html")  
 
-# # d = urljoin("https://zhengxie.info/folder/currentpage.html", "../finalpage.html")  
+# d = urljoin("https://zhengxie.info/folder/currentpage.html", "../finalpage.html")  
 
-# # print (a)
-# # print (b)
-# # print (c)
-# # print (d)
-# # import webbrowser
-# # webbrowser.open(a,new = 1) path = 'D:\\Workshop\\python\\zhengxie.info\\common\\css\\mystyle.css'
-# start = 'background.jpg'
-# import urllib.request
-# pathname = os.path.relpath(path, start)
-# print(pathname)
-# url = urllib.request.pathname2url(pathname)
-# print(url)
-# pathname = urllib.request.url2pathname(url)
-# print(pathname)
-# print(os.getcwd())
+# print (a)
+# print (b)
+# print (c)
+# print (d)

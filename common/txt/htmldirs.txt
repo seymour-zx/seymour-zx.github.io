@@ -6,4 +6,5 @@
 ../../base/homepage
 ../../base/privacy
 ../../base/sitemap
+../../base/tag/2020
 ../../private/bookmark

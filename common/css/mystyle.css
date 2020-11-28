@@ -45,8 +45,7 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
 .central {width: 100%; display: flex; align-items: center; justify-content:center;}
   main {width: 100%;}
     main article {
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding: 16px;
       background-color: rgba(244,241,237,0.8);
     }
     main h1 {text-align:center; color: rgba(3,2,4,1);}
@@ -60,27 +59,14 @@ footer {width: 100%;}
   align-items: center;
   justify-content:center;
   color: rgba(244,241,237,1);
-  background-color: rgba(37,86,122,1);
+  background-color: rgba(37,86,122,1);}
+  .support a {
+    color: rgba(244,241,237,1);
+    text-decoration: none;
   }
-  .support a {color: rgba(244,241,237,1); text-decoration: none;}
-.bookmark {
-  width: 100%;
-}
-.bookmark table {/*表格*/
-  width: 100%;
-  background-color: rgba(244,241,237,0.6);}
-.bookmark td{/*表格列*/
-  text-align: center;
-  border-bottom: 1px solid rgba(130,36,30,1);}
-.bookmark table a {/*列标签*/
-  text-decoration: none;
-  color: rgba(3,2,4,1);
-  font-size: 1rem;
-  height: 3rem;
-  line-height: 3rem;}
-.bookmark td[colspan="3"] {
-  text-align: left;
-}
+.bookmark {width: 100%;}
+.bookmark input[type="checkbox"] {/*隐藏复选框*/display: none;}
+.bookmark input:checked + table {/*隐藏table初始化*/display: none;}
 .bookmark label {/*控制标签*/
   width: 100%;
   height: 3rem;
@@ -90,22 +76,40 @@ footer {width: 100%;}
   color:rgba(243,215,55,1);
   cursor: pointer;
   border-bottom: 1px solid rgba(130,36,30);
-  background-color: rgba(3,2,4,0.6);}
-.bookmark input:checked + table {/*隐藏table初始化*/display: none;}
-.bookmark input[type="checkbox"] {/*隐藏复选框*/display: none;}
-
-
-
-
-
+  background-color: rgba(3,2,4,0.6);
+}
+.bookmark table {/*表格*/
+  width: 100%;
+  background-color: rgba(244,241,237,0.6);}
+  .bookmark td{/*表格列*/
+    text-align: center;
+    border-bottom: 1px solid rgba(130,36,30,1);}
+  .bookmark td[colspan="3"] {text-align: left;}
+  .bookmark table a {/*列标签*/
+    text-decoration: none;
+    color: rgba(3,2,4,1);
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+.tag {
+  font-weight: bolder;
+  color: rgba(244,241,237,1);
+  background-color: rgba(253,118,35,1);
+  padding: 6px;
+  line-height: 1.5rem;
+}
+  .tag a {
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: rgba(253,118,35,1);
+    background-color: rgba(244,241,237,1);
+  }
 @media only screen and (min-width: 688px){
   header {display: flex;}
     .menu {min-width: 61.8%;}
   main {max-width: 61.8%;}
 }
-  /* <div id="bookmark">
-  <div class="wrapper">
-
-    
-  </div><!--wrapper-->
-</div><!--bookmark--> */
