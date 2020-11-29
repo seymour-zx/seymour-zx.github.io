@@ -90,14 +90,14 @@ def self_txt(htmldir, indexdir):
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
-    # 创建"tag.txt"
-    path = openpath("tag.txt", indexdir)
-    if not os.path.exists(path):
-        strtime = time.strftime("%Y", time.gmtime())
-        message = '<a href="https://zhengxie.info/base/tag/%s/" title="" target="_self">%s</a>'%(strtime, strtime)
-        with open(path, 'w', encoding='utf-8') as fw:
-            fw.writelines(message)
-        print("创建self-txt：", os.path.abspath(path))
+    # # 创建"tag.txt"
+    # path = openpath("tag.txt", indexdir)
+    # if not os.path.exists(path):
+    #     strtime = time.strftime("%Y", time.gmtime())
+    #     message = '<a href="https://zhengxie.info/base/tag/%s/" title="" target="_self">%s</a>'%(strtime, strtime)
+    #     with open(path, 'w', encoding='utf-8') as fw:
+    #         fw.writelines(message)
+    #     print("创建self-txt：", os.path.abspath(path))
 
 def openpath(file, dirf=""):
     path = os.path.join(dirf, file)
@@ -149,12 +149,12 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines('\n  <div class="central">')
         fw.writelines('\n    <main>')
         fw.writelines('\n      <article>')
-        if readinfo('tag.txt', indexdir)=="":
-            pass
-        else:
-            fw.writelines('\n      <div class="tag">\n标签tag：')
-            fw.writelines(readinfo('tag.txt', indexdir))
-            fw.writelines('\n      </div>')
+        # if readinfo('tag.txt', indexdir)=="":
+        #     pass
+        # else:
+        #     fw.writelines('\n      <div class="tag">\n标签tag：')
+        #     fw.writelines(readinfo('tag.txt', indexdir))
+        #     fw.writelines('\n      </div>')
         fw.writelines(readinfo('article.txt', indexdir))
         fw.writelines('\n      </article>')  
         fw.writelines('\n    </main>')
@@ -162,7 +162,7 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines(readinfo('footer.txt', txtdir))
         fw.writelines(readinfo('script.txt', txtdir))
         fw.writelines(readinfo('html.txt', txtdir))
-    # webbrowser.open(path,new = 0, autoraise=True)
+    webbrowser.open(path,new = 0, autoraise=True)
 
 def execute(pydir):
     txtdir = openpath("../txt")
