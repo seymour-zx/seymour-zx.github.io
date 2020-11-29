@@ -1,9 +1,0 @@
-
-        <h1>欢迎作客颐亲王的小栈</h1>
-        <p></p>
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-    

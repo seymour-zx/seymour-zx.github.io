@@ -7,3 +7,4 @@
 ../../base/privacy
 ../../base/sitemap
 ../../private/bookmark
+../../blogpost/1

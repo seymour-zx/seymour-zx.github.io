@@ -48,8 +48,12 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
       padding: 16px;
       background-color: rgba(244,241,237,0.8);
     }
-    main h1 {text-align:center; color: rgba(3,2,4,1);}
-    main p {
+    article h1 {text-align:center; color: rgba(3,2,4,1);}
+    article h2 {color: rgba(3,2,4,1);}
+    article h3 {color: rgba(3,2,4,1);}
+    article h6 {color: rgba(3,2,4,1); margin: 3px;}
+    article p {
+      text-indent: 2rem;
       color: rgba(3,2,4,1);
     }
 footer {width: 100%;}

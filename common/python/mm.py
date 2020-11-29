@@ -7,12 +7,12 @@ import time
 def common_txt(txtdir):
     # 创建"footer2.txt"
     path = openpath("footer2.txt", txtdir)
-    strtime = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime())
+    strtime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
     message = """
     <div class="support"><!--版本更新-->      
       |&nbsp;
       &lt;&nbsp;
-      版本更新：%s+00:00
+      版本更新：%s
       &nbsp;&gt;
       &nbsp;|
     </div>
@@ -30,24 +30,39 @@ def common_txt(txtdir):
         fw.writelines('\n  </footer>')
     print("创建common-txt：", os.path.abspath(path))
 
-def self_txt(htmldir, indexdir):
+def self_txt(htmldir, indexdir, txtdir):
     # 创建"title.txt"
     path = openpath("title.txt", indexdir)
     if not os.path.exists(path):
-        message = """
-  <title>颐亲王的小栈 | 颐亲王 | 正协信息客栈</title>
-  <meta name="keywords" content="颐亲王, 郑協, zhengxie.info, 正协, 正协信息" />
-  <meta name="description" content="本站点是“颐亲王的小栈”，站点名称为“正协信息客栈”，由“华朝颐亲王郑協”创建并维护，借助“GitHub Pages”，发布于域名“zhengxie.info”内。" />
-"""
+        message = readinfo("title.txt", txtdir)
+        with open(path, 'w', encoding='utf-8') as fw:
+            fw.writelines(message)
+        print("创建self-txt：", os.path.abspath(path))
+    # 创建"keywords.txt"
+    path = openpath("keywords.txt", indexdir)
+    if not os.path.exists(path):
+        message = readinfo("keywords.txt", txtdir)
+        with open(path, 'w', encoding='utf-8') as fw:
+            fw.writelines(message)
+        print("创建self-txt：", os.path.abspath(path))
+    # 创建"description.txt"
+    path = openpath("description.txt", indexdir)
+    if not os.path.exists(path):
+        message = readinfo("description.txt", txtdir)
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
     # 创建"author.txt"
     path = openpath("author.txt", indexdir)
     if not os.path.exists(path):
-        message = """
-  <meta name="author" content="华朝颐亲王郑協, seymour.zx@foxmail.com" />
-"""
+        message = readinfo("author.txt", txtdir)
+        with open(path, 'w', encoding='utf-8') as fw:
+            fw.writelines(message)
+        print("创建self-txt：", os.path.abspath(path))
+    # 创建"article.txt"
+    path = openpath("article.txt", indexdir)
+    if not os.path.exists(path):
+        message = readinfo("article.txt", txtdir)
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
@@ -67,29 +82,50 @@ def self_txt(htmldir, indexdir):
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
-    # 创建"article.txt"
-    path = openpath("article.txt", indexdir)
+    # 创建"pubdate.txt"
+    path = openpath("pubdate.txt", indexdir)
     if not os.path.exists(path):
-        message = """
-        <h1>欢迎作客颐亲王的小栈</h1>
-        <p></p>
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br />
-"""
+        strtime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
+        message = "%s"%(strtime)
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
     # 创建"lastmod.txt"
     path = openpath("lastmod.txt", indexdir)
     if not os.path.exists(path):
-        strtime = time.strftime("%Y-%m-%d", time.gmtime())
+        strtime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
         message = "%s"%(strtime)
         with open(path, 'w', encoding='utf-8') as fw:
             fw.writelines(message)
         print("创建self-txt：", os.path.abspath(path))
+    # 创建"info_top.txt"
+    path = openpath("info_top.txt", indexdir)
+    title = readinfo("title.txt", indexdir)
+    title = title.strip()
+    title = title.strip("<title>")
+    title = title.strip(" | 颐亲王 | 正协信息客栈</title>")
+    datetime = readinfo("pubdate.txt", indexdir)
+    message = """
+    <h2>%s</h2>
+    <hr />
+    <h6>颐亲王&nbsp;&nbsp;正协信息客栈</h6>
+    <h6><time datetime="%s" pubdate="pubdate">发布于 %s</time></h6>
+    <hr />
+    """%(title, datetime, datetime)
+    with open(path, 'w', encoding='utf-8') as fw:
+        fw.writelines(message)
+    print("创建self-txt：", os.path.abspath(path))
+    # 创建"info_bottom.txt"
+    path = openpath("info_bottom.txt", indexdir)
+    datetime = readinfo("lastmod.txt", indexdir)
+    message = """
+    <hr />
+    <h6><time datetime="%s">修改于 %s</time></h6>
+    <hr />
+    """%(datetime, datetime)
+    with open(path, 'w', encoding='utf-8') as fw:
+        fw.writelines(message)
+    print("创建self-txt：", os.path.abspath(path))
 
 def openpath(file, dirf=""):
     path = os.path.join(dirf, file)
@@ -131,9 +167,11 @@ def creat_html(htmldir, indexdir, txtdir):
     path = openpath('index.html', htmldir)
     path = os.path.abspath(path)
     print("创建：", path)
-    with open(path, 'w', encoding='utf-8') as fw:
+    with open(path, 'w', encoding='utf-8') as fw:        
         fw.writelines(readinfo("head.txt", txtdir))
         fw.writelines(readinfo('title.txt', indexdir))
+        fw.writelines(readinfo('keywords.txt', indexdir))
+        fw.writelines(readinfo('description.txt', indexdir))
         fw.writelines(readinfo('link.txt', indexdir))
         fw.writelines(readinfo('author.txt', indexdir))
         fw.writelines(readinfo('body.txt', txtdir))
@@ -141,14 +179,22 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines('\n  <div class="central">')
         fw.writelines('\n    <main>')
         fw.writelines('\n      <article>')
+        if not htmldir.find("/blogpost/")==-1:
+            fw.writelines(readinfo('info_top.txt', indexdir))
+        elif not htmldir.find("/test")==-1:
+            fw.writelines(readinfo('info_top.txt', indexdir))
         fw.writelines(readinfo('article.txt', indexdir))
+        if not htmldir.find("/blogpost/")==-1:
+            fw.writelines(readinfo('info_bottom.txt', indexdir))
+        elif not htmldir.find("/test")==-1:
+            fw.writelines(readinfo('info_bottom.txt', indexdir))
         fw.writelines('\n      </article>')  
         fw.writelines('\n    </main>')
         fw.writelines('\n  </div>')
         fw.writelines(readinfo('footer.txt', txtdir))
         fw.writelines(readinfo('script.txt', txtdir))
         fw.writelines(readinfo('html.txt', txtdir))
-    webbrowser.open(path,new = 0, autoraise=True)
+    # webbrowser.open(path,new = 0, autoraise=True)
 
 def execute(pydir):
     txtdir = openpath("../txt")
@@ -160,7 +206,7 @@ def execute(pydir):
     print("index.html的目录列表htmldirs：")
     htmldirs, indexdirs = pathlist(dirstxt=dirstxt)
     for n in range(len(htmldirs)):
-        self_txt(htmldir=htmldirs[n], indexdir=indexdirs[n])
+        self_txt(htmldir=htmldirs[n], indexdir=indexdirs[n], txtdir=txtdir)
         creat_html(htmldir=htmldirs[n], indexdir=indexdirs[n], txtdir=txtdir)
 
 
