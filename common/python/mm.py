@@ -9,10 +9,10 @@ def common_txt(txtdir):
     path = openpath("footer2.txt", txtdir)
     strtime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
     message = """
-    <div class="support"><!--版本更新-->      
+    <div class="support"><!--站点更新-->      
       |&nbsp;
       &lt;&nbsp;
-      版本更新：%s
+      站点更新：%s
       &nbsp;&gt;
       &nbsp;|
     </div>
@@ -219,7 +219,7 @@ if __name__ == "__main__":
         print("初始位置错误！")
         print("预设位置：", pydir)
         print("实际位置：", os.getcwd())
-    pydir = input("按Enter关闭窗口......")
+    # pydir = input("按Enter关闭窗口......")
 
 
 # 网址拼接

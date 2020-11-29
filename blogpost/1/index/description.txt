@@ -1,3 +1,3 @@
 
-  <meta name="description" content="本站点是“颐亲王的小栈”，站点名称为“正协信息客栈”，由“华朝颐亲王郑協”创建并维护，借助“GitHub Pages”，发布于域名“zhengxie.info”内。" />
+  <meta name="description" content="记录与分享零基础自主学习HTML的经历。本站点是“颐亲王的小栈”，站点名称为“正协信息客栈”，由“华朝颐亲王郑協”创建并维护，借助“GitHub Pages”，发布于域名“zhengxie.info”内。" />
     

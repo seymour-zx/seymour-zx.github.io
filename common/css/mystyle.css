@@ -96,21 +96,30 @@ footer {width: 100%;}
     height: 3rem;
     line-height: 3rem;
   }
-.tag {
-  font-weight: bolder;
-  color: rgba(244,241,237,1);
-  background-color: rgba(253,118,35,1);
+.changelog {
+  width: 100%;
+  background-color: rgba(253,118,35,0.7);
   padding: 6px;
-  line-height: 1.5rem;
+  line-height: 1.5rem;  
 }
-  .tag a {
-    font-weight: bolder;
-    text-decoration: none;
-    margin: 3px;
+  .changelog td {
     padding-left: 3px;
     padding-right: 3px;
+    text-align: center;
     color: rgba(253,118,35,1);
-    background-color: rgba(244,241,237,1);
+    background-color: rgba(244,241,237,0.7);
+  }
+  .changelog td + td {
+    text-align: left;
+    color: rgba(244,241,237,1);
+    background-color: rgba(253,118,35,0.7);
+  }
+  .changelog a {
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: rgba(244,241,237,1);
   }
 @media only screen and (min-width: 688px){
   header {display: flex;}
