@@ -1,23 +1,23 @@
-body {margin: 0; padding: 0; border: 0;}
+html{margin: 0; padding: 0; border: 0; width: 100%; height: 100%;}
+body {margin: 0; padding: 0; border: 0; width: 100%; height: 100%;}
 .bodycontainer {
-  margin: 0; padding: 0; border: 0;
-  display: flex; align-items: center; justify-content:center;
-  width: 100vw;
-  height: 100vh;  
-}
+  margin: 0; padding: 0; border: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content:center;}
 .bodywrapper {
+  padding: 0; border: 0; width: 100%;
+  margin: auto;
+  overflow-y: scroll;
+}
+.body { 
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-color: rgba(1, 61, 26, 0.5);
-  background-image: url(https://api.ixiaowai.cn/api/api.php);
+  background-image: url(../image/background.jpg);  
   /* 小歪API */
-  /* background-image: url(../image/background.jpg); */
-  margin: auto 0; 
-  width: 100vw;  
-  overflow-y: scroll;
-}
+  /* background-image: url(https://api.ixiaowai.cn/api/api.php); */
+  width: 100%;}
 header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
   div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
     table.plaque {border-collapse: collapse;/* 显示边框 */}
@@ -151,16 +151,11 @@ footer div {
     .menu {min-width: 61.8%;}
   article {width: 61.8%;}
 }
-@media only screen and (orientation : portrait) {
-  .bodywrapper {height: calc(100vw * 1.4);} 
-}
 @media only screen and (orientation : landscape) {
+  /* 横屏(orientation : landscape) */
   .bodywrapper {height: 100%;} 
 }
-/* @media only screen and (orientation : portrait) { */
+@media only screen and (orientation : portrait) {
   /* 竖屏(orientation : portrait) */
-  /* 横屏(orientation : landscape) */
-  /* main {
-    height: calc(100vw / 61.8%);
-  }
-} */
+  .bodywrapper {height: calc(100vw * 1.4);} 
+}
