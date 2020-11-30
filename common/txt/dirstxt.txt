@@ -1,3 +1,4 @@
+../../
 ../../base/about
 ../../base/changelog
 ../../base/copyright

@@ -1,6 +1,6 @@
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->
-<script type="text/javascript">
+<script async type="text/javascript">
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
