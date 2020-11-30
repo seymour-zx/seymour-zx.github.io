@@ -1,12 +1,9 @@
-body {margin: 0; padding: 0;}
+body {margin: 0; padding: 0; border: 0;}
 .bodycontainer {
-  margin: 0;
-  padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content:center;
+  margin: 0; padding: 0; border: 0;
+  display: flex; align-items: center; justify-content:center;
+  width: 100vw;
+  height: 100vh;  
 }
 .bodywrapper {
   background-position: center;
@@ -18,9 +15,8 @@ body {margin: 0; padding: 0;}
   /* 小歪API */
   /* background-image: url(../image/background.jpg); */
   margin: auto 0; 
-  width: 100%;  
-  overflow-y: auto;
-
+  width: 100vw;  
+  overflow-y: scroll;
 }
 header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
   div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
@@ -156,7 +152,7 @@ footer div {
   article {width: 61.8%;}
 }
 @media only screen and (orientation : portrait) {
-  .bodywrapper {height: calc(100vw * 1.1);} 
+  .bodywrapper {height: calc(100vw * 1.4);} 
 }
 @media only screen and (orientation : landscape) {
   .bodywrapper {height: 100%;} 
