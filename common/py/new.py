@@ -183,10 +183,10 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines(frinfo("script.txt", txtdir))
         # 通用
         fw.writelines(frinfo("html.txt", txtdir))
-    webbrowser.open(path,new = 0, autoraise=True)
+    # webbrowser.open(path,new = 0, autoraise=True)
 
 
-def execute(pydir):
+def execute():
     print("\n开始准备通用txt...")
     txtdir = openpath("../txt")
     print("通用txt存放于:", txtdir)    
@@ -201,15 +201,17 @@ def execute(pydir):
 
 
 if __name__ == "__main__":
-    pydir = "D:\\Workshop\\zhengxie.info\\common\\py"
+    pydir = "D:\\Workshop"
     if pydir==os.getcwd():
         print("初始位置正确！")
-        execute(pydir=pydir)
+        pydir = "D:\\Workshop\\zhengxie.info\\common\\py"
+        os.chdir(pydir)
+        execute()
     else:
         print("初始位置错误！")
         print("预设位置：", pydir)
         print("实际位置：", os.getcwd())
-    pydir = input("\n按Enter关闭窗口...")
+    # pydir = input("\n按Enter关闭窗口...")
 
 """
 # 网址拼接

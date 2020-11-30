@@ -76,7 +76,7 @@ footer {width: 100%;}
   .bodywrapper {height: 100%;}}
 @media only screen and (orientation : portrait) {
   /* 竖屏(orientation : portrait) */
-  .bodywrapper {height: calc(100vw * 1.5);} 
+  .bodywrapper {height: calc(100vw * 2);} 
 }
 .support {display: flex; align-items: center; justify-content:center; text-align: center;
   color: rgba(244,241,237,1);
