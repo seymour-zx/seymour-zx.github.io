@@ -1,4 +1,3 @@
-../../base/test
 ../../base/about
 ../../base/changelog
 ../../base/copyright
@@ -7,4 +6,5 @@
 ../../base/privacy
 ../../base/sitemap
 ../../private/bookmark
-../../blogpost/1
+../../unit/1
+../../unit/2

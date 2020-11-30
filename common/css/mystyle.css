@@ -1,13 +1,4 @@
-body {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(1, 61, 26, 0.5);
-  background-image: url(https://api.ixiaowai.cn/api/api.php);
-  /* 小歪API */
-  /* background-image: url(../image/background.jpg); */
-}
+html, body {margin: 0; padding: 0;}
 header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
   div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
     table.plaque {border-collapse: collapse;/* 显示边框 */}
@@ -42,12 +33,21 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
       width: 25%;
       color: rgba(244,241,237,1);}
     .menu tr {border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1);}
-.central {width: 100%; display: flex; align-items: center; justify-content:center;}
-  main {width: 100%;}
-    main article {
-      padding: 16px;
-      background-color: rgba(244,241,237,0.8);
-    }
+main {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(1, 61, 26, 0.5);
+  background-image: url(https://api.ixiaowai.cn/api/api.php);
+  /* 小歪API */
+  /* background-image: url(../image/background.jpg); */
+  width: 100%;
+  display: flex; align-items: center; justify-content:center;
+}
+  article {
+    width: 100%;    
+    margin: 0 auto; padding: 16px; background-color: rgba(244,241,237,0.8);}
     article h1 {text-align:center; color: rgba(3,2,4,1);}
     article h2 {color: rgba(3,2,4,1);}
     article h3 {color: rgba(3,2,4,1);}
@@ -57,14 +57,14 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
       color: rgba(3,2,4,1);
     }
 footer {width: 100%;}
-.support {
+footer div {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content:center;
   color: rgba(244,241,237,1);
   background-color: rgba(37,86,122,1);}
-  .support a {
+  footer div a {
     color: rgba(244,241,237,1);
     text-decoration: none;
   }
@@ -121,8 +121,27 @@ footer {width: 100%;}
     padding-right: 3px;
     color: rgba(244,241,237,1);
   }
+
+.support div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: rgba(244,241,237,1);
+  background-color: rgba(37,86,122,1);}
+  .support a {
+    color: rgba(244,241,237,1);
+    text-decoration: none;
+  }
 @media only screen and (min-width: 688px){
   header {display: flex;}
     .menu {min-width: 61.8%;}
-  main {max-width: 61.8%;}
+  article {width: 61.8%;}
+}
+@media only screen and (orientation : portrait) {
+  /* 竖屏(orientation : portrait) */
+  /* 横屏(orientation : landscape) */
+  main {
+    height: calc(100vw / 61.8%);
+  }
 }
