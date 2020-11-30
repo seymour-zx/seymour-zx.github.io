@@ -156,7 +156,7 @@ footer div {
   article {width: 61.8%;}
 }
 @media only screen and (orientation : portrait) {
-  .bodywrapper {height: calc(100vw * 1.618);} 
+  .bodywrapper {height: calc(100vw * 1.1);} 
 }
 @media only screen and (orientation : landscape) {
   .bodywrapper {height: 100%;} 
