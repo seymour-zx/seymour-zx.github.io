@@ -9,7 +9,7 @@ body {margin: 0; padding: 0; border: 0;}
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-color: rgba(1, 61, 26, 0.5);
   background-image: url(https://api.ixiaowai.cn/api/api.php);
   /* 小歪API */
