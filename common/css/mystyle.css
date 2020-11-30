@@ -1,4 +1,27 @@
-html, body {margin: 0; padding: 0;}
+body {margin: 0; padding: 0;}
+.bodycontainer {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.bodywrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(1, 61, 26, 0.5);
+  background-image: url(https://api.ixiaowai.cn/api/api.php);
+  /* 小歪API */
+  /* background-image: url(../image/background.jpg); */
+  margin: auto 0; 
+  width: 100%;  
+  overflow-y: auto;
+
+}
 header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
   div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
     table.plaque {border-collapse: collapse;/* 显示边框 */}
@@ -34,23 +57,13 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
       color: rgba(244,241,237,1);}
     .menu tr {border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1);}
 main {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(1, 61, 26, 0.5);
-  background-image: url(https://api.ixiaowai.cn/api/api.php);
-  /* 小歪API */
-  /* background-image: url(../image/background.jpg); */
   width: 100%;
-  height: calc(100vw * 2 );
   display: flex; align-items: center; justify-content:center;
   padding-top: 16px;
   padding-bottom: 16px;
 }
   article {
-    width: 100%;
-    height: 100%;
+    width: 100%;    
     margin: 0 auto; padding: 16px; background-color: rgba(244,241,237,0.8);}
     article h1 {text-align:center; color: rgba(3,2,4,1);}
     article h2 {color: rgba(3,2,4,1);}
@@ -141,6 +154,12 @@ footer div {
   header {display: flex;}
     .menu {min-width: 61.8%;}
   article {width: 61.8%;}
+}
+@media only screen and (orientation : portrait) {
+  .bodywrapper {height: calc(100vw * 1.618);} 
+}
+@media only screen and (orientation : landscape) {
+  .bodywrapper {height: 100%;} 
 }
 /* @media only screen and (orientation : portrait) { */
   /* 竖屏(orientation : portrait) */
