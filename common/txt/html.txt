@@ -1,6 +1,9 @@
 
 </div>
+<!-- /.body -->
 </div>
+<!-- /.bodywrapper -->
 </div>
+<!-- /.bodycontainer -->
 </body>
 </html>
