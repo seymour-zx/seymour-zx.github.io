@@ -1,5 +1,5 @@
-
-    <div class="support"><!--版本测试-->
+    <!-- 版本测试 -->
+    <div>
       &lt;&nbsp;
       测试版本：
       <a href="https://zhengxie.info/unit/1/" title="" target="_self">U1</a>
@@ -9,3 +9,4 @@
       <a href="https://zhengxie.info/unit/2/" title="" target="_self">U2</a>
       &nbsp;&gt;
     </div>
+    <!-- /版本测试 -->

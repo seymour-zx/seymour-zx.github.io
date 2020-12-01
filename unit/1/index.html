@@ -33,9 +33,9 @@
 <div class="bodywrapper">
 <div class="body">
 
-  <header><!--头顶-->
-    <div class="plaque"><!--匾额-->
-      <table class="plaque"><!--匾额-->
+  <header>
+    <div class="plaque">
+      <table class="plaque">
         <tr>
           <td class="logo" rowspan="3"></td>
           <td colspan="3">颐亲王的小栈</td>
@@ -48,7 +48,8 @@
         <tr><td colspan="3">Z H E N G X I E . I N F O</td></tr>
       </table>
     </div>
-    <div class="menu"><!--菜单-->
+    <!-- /.plaque 匾额 -->
+    <div class="menu">
       <table class="menu">
         <tr>
           <td>
@@ -66,6 +67,7 @@
         </tr>
       </table>
     </div>
+    <!-- /.menu 菜单 -->
   </header>
 
     <main>
@@ -77,41 +79,94 @@
     <hr />
 
         <section>
-          <h3>前言</h3>
-          <p>以前觉得，自主设计制作拥有独立域名的个人网页，很难！！！</p>
-          <p>但在看多了相关（主要是培训机构的招生广告）的文章和视频之后，自认为“我也行”。</p>
-          <p>对于像我这种HTML零基础的新人来说，自建网站的愿望，到底难不难实现？</p>
-          <p>心血来潮，想用自己的姓名全拼注册了一个域名。</p>
-          <p>"zhengxie"这个字段，对于.com那些域名，肯定是不抱有任何捡漏幻想的。</p>
-          <p>所以能捡漏zhengxie.info这个域名，我是无比满意的。</p>
+          <h3>为什么要建设自己的个人网站？</h3>
+          <p>最直接的原因，就是突然感觉自己建设一个简单的网站，其实是不难实现的。</p>
+          <p>说实话，以前真的觉得很麻烦。即使各种重生现代都市的商业小说里，开局就来个架设导航网站的操作剧情。
+          看起来好像很容易复制，但设置服务器这些还是让我觉得很麻烦，打消了学习建站的念头。</p>
+          <p>2020年10月初，无意中看到了很多培训机构的招生广告，像什么“一天入门，一个星期掌握，一个月成神”，“进群免费学”之类的。</p>
+          <p>无论硬广还是软广，广告看多了，不禁要问自己，对于像我这种HTML零基础的新人来说，自建网站的愿望，到底难不难实现？怎么感觉好像“我也行！”？</p>
         </section>
 
+        <section>
+          <h3>为什么选择"zhengxie.info"这个域名？</h3>
+          <p>怎么说呢，都是心血来潮的结果。查过域名注册信息的人肯定知道， "zhengxie.info" 这个域名是我在北京时间凌晨2点后通过"阿里云"注册的。</p>
+          <p>"zhengxie"是姓名的全拼，"zhengxie"这个字段还没被注册的域名真不多。".info"这个后缀，就是在尚可注册的域名里，挑选一个比较适合个人使用的。</p>
+          <p>中意域名的可选余地不大，但还能从中捡漏到"zhengxie.info"，我是感觉无比幸运的，因为我越来越喜欢这个域名。</p>
+        </section>
+
+
+        <h6>*本文于2020年10月25日，首发于<a href="https://zhuanlan.zhihu.com/p/268496617/" title="移步访问知乎">知乎</a>，将根据实际情况，不定期更新。</h6>
+        <h6>*于2020年11月29日起，同步更新于"zhengxie.info"。</h6>
+        <h6>*欢迎您访问颐亲王的知乎页面，或移步作客颐亲王的小栈。</h6>
+<!--
+光注册域名就花费了不少时间，再想想还需要域名解析、装饰网页等等操作，如果知道注册域名能退款的话，当时我会毫不犹豫地选择退款。
+
+掉坑里，本想直接躺着的，可惜还心有不甘，没有完全放弃的打算。
+
+所以，在这篇文章里，我将记录与分享我的个人网页的建设过程。
+
+当然，更多的是想获得大师们的技术指导。
+
+如果我还没有放弃，个人网页的建设也有进展的话，我会更新相对应内容。
+
+注册域名
+注册到心仪的域名，才更有动力。
+域名注册需要实名认证审核，通常需要3-5个工作日。
+域名注册代理商，我最先知道的是腾讯云，然后选了阿里云（万网）。
+注册GitHub, 使用GitHub Pages
+链接：GitHub: Where the world builds software
+注册完成后，登录账号
+网页界面右上角区域，点击+标，下拉选单第一行"New repository"
+在"Repository name *"，按双引号内的各式填写：“所有者名称.github.io”
+勾选"Add a README file"
+再点击绿色按钮"Create repository"
+页面跳转后，点击右边"Settings"，没看到"Settings"就先点"…"
+下滑到"GitHub Pages", "Your site is published at "后就是你的网页了，（记住这个网址，下一步解析是用到）
+再下滑一点，"Custom domain"，在框内填写你注册的域名，如"http://zhengxie.info"
+然后点击"Save"
+域名解析
+我是用阿里云注册域名的，这里用阿里云举例
+打开阿里云App，"管控"界面，下滑
+到"我的云产品"，点击"全部展开"
+选择"云解析DNS"，在点击域名会自动跳到"解析列表"
+点击屏幕右上角"+"，记录类型选择"CNAME"
+主机记录：填@是本级域名，填"blog"就是http://blog.zhengxie.info，
+记录值：把上1步记住的网址填进去
+等个10分钟左右，就能访问指定的域名了
+待续……
+
+-->
+
     <hr />
-    <h6><time datetime="2020-11-29T10:39Z">修改于 2020-11-29T10:39Z</time></h6>
+    <h6><time datetime="2020-12-01T08:32Z">修改于 2020-12-01T08:32Z</time></h6>
     <hr />
     
       </article>
     </main>
   <footer>
-    <div class="support"><!--基础文档-->      
+    <!--/基础文档 -->
+    <div>
       &lt;&nbsp;
-      <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私保护</a>      
+      <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私保护</a>
       &nbsp;|&nbsp;
       <a href="https://zhengxie.info/base/disclaimer/" title="" target="_self">免责声明</a>
       &nbsp;|&nbsp;
       <a href="https://zhengxie.info/base/copyright/" title="" target="_self">版权协议</a>
       &nbsp;&gt;
     </div>
+    <!-- /基础文档 -->
 
-    <div><!--站点更新-->      
+    <!-- 站点更新 -->
+    <div>      
       |&nbsp;
       &lt;&nbsp;
-      站点更新：2020-12-01T04:50Z
+      站点更新：2020-12-01T08:32Z
       &nbsp;&gt;
       &nbsp;|
     </div>
-
-    <div class="support"><!--版本测试-->
+    <!-- /站点更新 -->
+    <!-- 版本测试 -->
+    <div>
       &lt;&nbsp;
       测试版本：
       <a href="https://zhengxie.info/unit/1/" title="" target="_self">U1</a>
@@ -121,6 +176,7 @@
       <a href="https://zhengxie.info/unit/2/" title="" target="_self">U2</a>
       &nbsp;&gt;
     </div>
+    <!-- /版本测试 -->
 
   </footer>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-6434243103158481"></script><!--Google adsense-->

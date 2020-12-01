@@ -1,7 +1,7 @@
 
-  <header><!--头顶-->
-    <div class="plaque"><!--匾额-->
-      <table class="plaque"><!--匾额-->
+  <header>
+    <div class="plaque">
+      <table class="plaque">
         <tr>
           <td class="logo" rowspan="3"></td>
           <td colspan="3">颐亲王的小栈</td>
@@ -14,7 +14,8 @@
         <tr><td colspan="3">Z H E N G X I E . I N F O</td></tr>
       </table>
     </div>
-    <div class="menu"><!--菜单-->
+    <!-- /.plaque 匾额 -->
+    <div class="menu">
       <table class="menu">
         <tr>
           <td>
@@ -32,4 +33,5 @@
         </tr>
       </table>
     </div>
+    <!-- /.menu 菜单 -->
   </header>

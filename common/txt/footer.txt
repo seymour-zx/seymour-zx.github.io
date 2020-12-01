@@ -1,24 +1,28 @@
 
   <footer>
-    <div class="support"><!--基础文档-->      
+    <!--/基础文档 -->
+    <div>
       &lt;&nbsp;
-      <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私保护</a>      
+      <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私保护</a>
       &nbsp;|&nbsp;
       <a href="https://zhengxie.info/base/disclaimer/" title="" target="_self">免责声明</a>
       &nbsp;|&nbsp;
       <a href="https://zhengxie.info/base/copyright/" title="" target="_self">版权协议</a>
       &nbsp;&gt;
     </div>
+    <!-- /基础文档 -->
 
-    <div><!--站点更新-->      
+    <!-- 站点更新 -->
+    <div>      
       |&nbsp;
       &lt;&nbsp;
-      站点更新：2020-12-01T04:50Z
+      站点更新：2020-12-01T08:32Z
       &nbsp;&gt;
       &nbsp;|
     </div>
-
-    <div class="support"><!--版本测试-->
+    <!-- /站点更新 -->
+    <!-- 版本测试 -->
+    <div>
       &lt;&nbsp;
       测试版本：
       <a href="https://zhengxie.info/unit/1/" title="" target="_self">U1</a>
@@ -28,5 +32,6 @@
       <a href="https://zhengxie.info/unit/2/" title="" target="_self">U2</a>
       &nbsp;&gt;
     </div>
+    <!-- /版本测试 -->
 
   </footer>

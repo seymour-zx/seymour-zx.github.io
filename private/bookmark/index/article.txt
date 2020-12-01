@@ -7,7 +7,6 @@
               <a href="https://tongji.baidu.com/web/10000282781/homepage/index/">百度统计</a>  
               <a href="https://baidu.com/">百度</a>
               <a href="https://translate.google.cn/">Google 翻译</a> 
-              <a href="https://zhuanlan.zhihu.com/p/268496617/">&lt;&nbsp;建站日志发表于知乎&nbsp;&gt;</a>    
             </div>
             <!-- /.content -->
           </div>
@@ -65,7 +64,6 @@
             <!-- /.content -->
           </div>
           <!-- /.container 实用工具 -->
-          <!-- /.container -->          
           <div class="container">
             <label for="inputnext5">其他</label>            
             <input id="inputnext5" type="checkbox" checked />

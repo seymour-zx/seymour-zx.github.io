@@ -50,13 +50,15 @@ def ctxt(txtdir):
     path = openpath("footer2.txt", txtdir)
     strtime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
     info = """
-    <div><!--站点更新-->      
+    <!-- 站点更新 -->
+    <div>      
       |&nbsp;
       &lt;&nbsp;
       站点更新：%s
       &nbsp;&gt;
       &nbsp;|
     </div>
+    <!-- /站点更新 -->
 """%(strtime)
     fwinfo(path, info)
     # 创建"footer.txt"
@@ -206,6 +208,8 @@ if __name__ == "__main__":
         print("初始位置正确！")
         pydir = "D:\\Workshop\\zhengxie.info\\common\\py"
         os.chdir(pydir)
+        execute()
+    elif os.getcwd()=="D:\\Workshop\\zhengxie.info\\common\\py":
         execute()
     else:
         print("初始位置错误！")
