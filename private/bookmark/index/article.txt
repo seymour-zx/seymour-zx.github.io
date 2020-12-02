@@ -75,6 +75,7 @@
               <a href="https://www.runoob.com/">菜鸟教程</a>
               <a href="https://market.cloud.tencent.com/">腾讯云市场</a>
               <a href="https://cn.investing.com/">英为财情</a>
+              <a href="https://ping.pe/zhengxie.info">IP地址测速</a>
             </div>
             <!-- /.content -->
           </div>
