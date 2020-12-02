@@ -185,7 +185,7 @@ def creat_html(htmldir, indexdir, txtdir):
         fw.writelines(frinfo("script.txt", txtdir))
         # 通用
         fw.writelines(frinfo("html.txt", txtdir))
-    # webbrowser.open(path,new = 0, autoraise=True)
+    webbrowser.open(path,new = 0, autoraise=True)
 
 
 def execute():

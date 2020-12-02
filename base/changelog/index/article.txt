@@ -1,7 +1,7 @@
 
 
         <h1>更新日志</h1>
-        <table class="changelog">
+        <table class="unit">
           <tr>
             <td noWrap="noWrap">
               2020-11-29
