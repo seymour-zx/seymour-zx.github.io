@@ -100,14 +100,26 @@ footer {width: 100%;}
     display: flex;
     flex-wrap: wrap; 
   }
+  .bookmark span {
+    margin: 6px;
+    padding: 6px;    
+    color: rgba(244,241,237,1);
+    background-color: rgba(37,86,122,1);
+  }
   .bookmark a {/*列标签*/
     text-decoration: none;
     color: rgba(3,2,4,1);
     margin: 6px;
     padding: 6px;    
-    border-left: 1px solid yellowgreen;
+    border-left: 1px solid rgba(37,86,122,1);
   }
-
+pre.code {
+  background-color: rgba(3,2,4,0.9);
+  color: rgba(253,118,35,1);
+  width: 100%;
+  max-height: 61.8%;
+  overflow: scroll;
+}
 .support {display: flex; align-items: center; justify-content:center; text-align: center;
   color: rgba(244,241,237,1);
   background-color: rgba(37,86,122,1);}
@@ -115,9 +127,8 @@ footer {width: 100%;}
     color: rgba(244,241,237,1);
     text-decoration: none;}
 
-.unit {
+.unit {/* 目录 */  
   width: 100%;
-
 }
   .unit td {
     color: rgba(244,241,237,1);  

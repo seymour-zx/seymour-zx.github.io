@@ -89,7 +89,7 @@
             <span style="background-color: rgba(216,41,82,1);">rgba(216,41,82,1)</span>
           </p>
           <p>花青
-            <span style="background-color: #25567A;">#25567A/span>
+            <span style="background-color: #25567A;">#25567A</span>
             <span style="background-color: rgba(37,86,122,1);">rgba(37,86,122,1)</span>
           </p>
           <p>藤黄
@@ -136,17 +136,16 @@
           <p>线性渐变的写法是：linear-gradient(direction, color-stop1, color-stop2, ...);</p>
           <p>这里的direction可以是方向，也可以是具体的角度。例如："to bottom"、"to top"、"to left"、"to right"、"to bottom left"、"to bottom right"、"to top left"、"to top right"、"120deg"、"3.14rad"，这些都是合理的方向取值。</p>
           <p>color-stop是一个颜色和一个区段，例如："rgba(255,0,0,0)"、"orange"、"yellow 10%"、"green 20%"、"lime 28px"</p>
-          <p>我们组合一下，产生一个“真正的金色”的背景：<br />
-            <code>
-              &lt;style&gt;<br />&nbsp;&nbsp;
-                #grad1 {<br />&nbsp;&nbsp;&nbsp;&nbsp;
-                  height: 200px;<br />&nbsp;&nbsp;&nbsp;&nbsp;
-                  background: linear-gradient(45deg, gold 10%, yellow 50%, gold 90%);<br />
-                &nbsp;&nbsp;}<br />
-              &lt;/style&gt;<br />
-              &lt;div id="grad1"&gt;&lt;/div&gt;
-            </code>
-          </p>
+          <p>我们组合一下，产生一个“真正的金色”的背景：</p> 
+<pre class="code">
+&lt;style&gt;
+  #grad1 {
+    height: 200px;
+    background: linear-gradient(45deg, gold 10%, yellow 50%, gold 90%);
+  }
+&lt;/style&gt;
+&lt;div id="grad1"&gt;&lt;/div&gt;
+</pre>
           <p>放射性渐变需要一个中心点和若干个颜色：radial-gradient(shape size at position, start-color, ..., last-color);</p>
           <p></p>
         </section>
@@ -165,7 +164,7 @@
     <div>      
       |&nbsp;
       &lt;&nbsp;
-      站点更新：2020-12-03T05:52Z
+      站点更新：2020-12-03T17:40Z
       &nbsp;&gt;
       &nbsp;|
     </div>
