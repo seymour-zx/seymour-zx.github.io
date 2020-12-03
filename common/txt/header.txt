@@ -19,13 +19,13 @@
       <table class="menu">
         <tr>
           <td>
-            <a href="https://zhengxie.info/" title="返回首页" target="_self">首页</a>
+            <a href="https://zhengxie.info/base/about/" title="" target="_self">关于</a>
           </td>
           <td>
             <a href="https://zhengxie.info/base/changelog/" title="" target="_self">目录</a>
           </td>
           <td>
-            <a href="https://zhengxie.info/base/privacy/" title="" target="_self">隐私</a>
+            <a href="https://zhengxie.info/base/comment/" title="" target="_self">留言</a>
           </td>
           <td>
             <a href="https://zhengxie.info/private/bookmark/" title="" target="_self">书签</a>

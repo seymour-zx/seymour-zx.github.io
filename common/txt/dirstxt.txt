@@ -6,6 +6,7 @@
 ../../base/homepage
 ../../base/privacy
 ../../base/sitemap
+../../base/comment
 ../../private/bookmark
 ../../unit/1
 ../../unit/2

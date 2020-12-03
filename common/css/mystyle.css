@@ -59,7 +59,7 @@ main {width: 100%; display: flex; align-items: center; justify-content:center;}
   article h1, article h2, article h3, article h6, article p {color: rgba(3,2,4,1);}
   article h1 {text-align:center; }
   article h6 {margin-top: 3px; margin-bottom: 3px;}
-  article p {text-indent: 2rem;}
+  /* article p {text-indent: 2rem;} */
 footer {width: 100%;}
   footer > div {display: flex; align-items: center; justify-content:center; text-align: center;
     color: rgba(244,241,237,1);

@@ -1,0 +1,33 @@
+
+        <section>
+          <h3>创建账户</h3>
+          <p>
+            访问GitHub官网，https://github.com/，点击右边上角“Sign up”，填写用户名“Username * ”和电子邮箱“Email address * ”，再设置Github账号密码“Password * ”，最后点击“Create account”完成账户创建。
+          </p>
+        </section>
+
+        <section>
+          <h3>创建仓库</h3>
+          <p>
+          登录账号后，点击页面右上角区域的“+”标，再点击下拉选项中的第一行“New repository”。
+          </p>
+          <p>
+          在“Repository name * ”，按双引号内的各式填写：“用户名.github.io”。例如，用户seymour-zx填写“seymour-zx.github.io”。
+          </p>
+          <p>
+            勾选"Add a README file"后，点击绿色按钮"Create repository"完成仓库创建。
+          </p>
+          <p>
+          等待页面跳转后，点击屏幕中间区域右边"Settings"，没看到"Settings"就先点"…"。
+          </p>
+          <p>
+          再次等待页面跳转后，页面下滑到"GitHub Pages"，"Your site is published at "后就是GitHub Pages分配给你的仓库地址了。你可以直接通过这个地址访问你的仓库。
+          </p>
+        </section>
+
+        <section>
+          <h3>指定域名解析</h3>
+          <p>
+            若持有域名，可以通过“CNAME”记录解析到指定域名。
+          </p>          
+        </section>
