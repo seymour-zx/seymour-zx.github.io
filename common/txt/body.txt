@@ -11,6 +11,4 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="blank-translucent" /><!--顶部状态栏背景色-->
 </head>
 <body>
-<div class="bodycontainer">
-<div class="bodywrapper">
 <div class="body">

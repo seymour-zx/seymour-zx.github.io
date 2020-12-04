@@ -1,22 +1,19 @@
-html{margin: 0; padding: 0; border: 0; width: 100%; height: 100%;}
-body {margin: 0; padding: 0; border: 0; width: 100%; height: 100%;}
-.bodycontainer {
-  margin: 0; padding: 0; border: 0; width: 100%; height: 100%;
+html{margin: 0; padding: 0; border: 0;  
   display: flex; align-items: center; justify-content:center;}
-.bodywrapper {
-  padding: 0; border: 0; width: 100%;
-  margin: auto;
-  overflow-y: scroll;
+body {
+  margin: 0 auto; padding: 0; border: 0;
+  width: 100vw; height: 100vh;
+  overflow-x: hidden; overflow-y: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: rgba(244,241,237,1);
-  background-image: url(../image/background.jpg);
-  /* 小歪API */
+  background-image: url(../image/background.jpg);  
   /* background-image: url(https://api.ixiaowai.cn/api/api.php); */
+  /* 小歪API */
 }
-.body {width: 100%;}
+.body {margin: 0; padding: 0; border: 0; overflow: hidden;}
 header {background-color: rgba(130,36,30,1); align-items: center; justify-content:center;}
   div.plaque {width: 100%; display: flex; align-items: center; justify-content:center;}
     table.plaque {border-collapse: collapse;/* 显示边框 */}
