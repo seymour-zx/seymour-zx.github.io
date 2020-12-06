@@ -124,20 +124,24 @@ def stxt(htmldir, indexdir, txtdir):
     title = title.strip(" | 颐亲王 | 正协信息客栈</title>")
     datetime = frinfo("pubdate.txt", indexdir)
     info = """
+    <section>
     <h2>%s</h2>
     <hr />
     <h6>颐亲王&nbsp;&nbsp;正协信息客栈</h6>
     <h6><time datetime="%s" pubdate="pubdate">发布于 %s</time></h6>
     <hr />
+    </section>
 """%(title, datetime, datetime)
     fwinfo(path, info)
     # 创建"info_bottom.txt"
     path = openpath("info_bottom.txt", indexdir)
     datetime = frinfo("lastmod.txt", indexdir)
     info = """
+    <section>
     <hr />
     <h6><time datetime="%s">修改于 %s</time></h6>
     <hr />
+    </section>
     """%(datetime, datetime)
     fwinfo(path, info)
 

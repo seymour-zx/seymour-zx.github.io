@@ -58,7 +58,8 @@
           <p>这里的direction可以是方向，也可以是具体的角度。例如："to bottom"、"to top"、"to left"、"to right"、"to bottom left"、"to bottom right"、"to top left"、"to top right"、"120deg"、"3.14rad"，这些都是合理的方向取值。</p>
           <p>color-stop是一个颜色和一个区段，例如："rgba(255,0,0,0)"、"orange"、"yellow 10%"、"green 20%"、"lime 28px"</p>
           <p>我们组合一下，产生一个“真正的金色”的背景：</p> 
-<pre class="code">
+          <pre class="code">
+          <code>
 &lt;style&gt;
   #grad1 {
     height: 200px;
@@ -66,7 +67,8 @@
   }
 &lt;/style&gt;
 &lt;div id="grad1"&gt;&lt;/div&gt;
-</pre>
+          </code>
+          </pre>
           <p>放射性渐变需要一个中心点和若干个颜色：radial-gradient(shape size at position, start-color, ..., last-color);</p>
           <p></p>
         </section>
