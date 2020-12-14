@@ -1,33 +1,75 @@
 
         <section>
-          <h3>创建账户</h3>
-          <p>
-            访问GitHub官网，https://github.com/，点击右边上角“Sign up”，填写用户名“Username * ”和电子邮箱“Email address * ”，再设置Github账号密码“Password * ”，最后点击“Create account”完成账户创建。
+          <h3>国画颜色</h3>
+          <p>橘红
+            <span style="background-color: #FD7623;">#FD7623</span>
+            <span style="background-color: rgba(253,118,35,1);">rgba(253,118,35,1)</span>
           </p>
+          <p>曙红
+            <span style="background-color: #D82952;">#D82952</span>
+            <span style="background-color: rgba(216,41,82,1);">rgba(216,41,82,1)</span>
+          </p>
+          <p>花青
+            <span style="background-color: #25567A;">#25567A</span>
+            <span style="background-color: rgba(37,86,122,1);">rgba(37,86,122,1)</span>
+          </p>
+          <p>藤黄
+            <span style="background-color: #F3D737;">#F3D737</span>
+            <span style="background-color: rgba(243,215,55,1);">rgba(243,215,55,1)</span>
+          </p>
+          <p>草绿
+            <span style="background-color: #409071;">#409071</span>
+            <span style="background-color: rgba(64,144,113,1);">rgba(64,144,113,1)</span>
+          </p>
+          <p>朱膘
+            <span style="background-color: #D64E52;">#D64E52</span>
+            <span style="background-color: rgba(214,78,82,1);">rgba(214,78,82,1)</span>
+          </p>
+          <p>石绿
+            <span style="background-color: #77D297;">#77D297</span>
+            <span style="background-color: rgba(119,210,151,1);">rgba(119,210,151,1)</span>
+          </p>
+          <p>头青
+            <span style="background-color: #3388B1;">#3388B1</span>
+            <span style="background-color: rgba(51,136,177,1);">rgba(51,136,177,1)</span>
+          </p>
+          <p>赭石
+            <span style="background-color: #82241E;">#82241E</span>
+            <span style="background-color: rgba(130,36,30,1);">rgba(130,36,30,1)</span>
+          </p>
+          <p>胭脂
+            <span style="background-color: #621334;">#621334</span>
+            <span style="background-color: rgba(98,19,52,1);">rgba(98,19,52,1)</span>
+          </p>
+          <p>钛白
+            <span style="background-color: #F4F1ED;">#F4F1ED</span>
+            <span style="background-color: rgba(244,241,237,1);">rgba(244,241,237,1)</span>
+          </p>
+          <p>墨色
+            <span style="background-color: #030204;">#030204</span>
+            <span style="background-color: rgba(3,2,4,1);">rgba(3,2,4,1)</span>
+          </p>                  
         </section>
 
         <section>
-          <h3>创建仓库</h3>
-          <p>
-          登录账号后，点击页面右上角区域的“+”标，再点击下拉选项中的第一行“New repository”。
-          </p>
-          <p>
-          在“Repository name * ”，按双引号内的各式填写：“用户名.github.io”。例如，用户seymour-zx填写“seymour-zx.github.io”。
-          </p>
-          <p>
-            勾选"Add a README file"后，点击绿色按钮"Create repository"完成仓库创建。
-          </p>
-          <p>
-          等待页面跳转后，点击屏幕中间区域右边"Settings"，没看到"Settings"就先点"…"。
-          </p>
-          <p>
-          再次等待页面跳转后，页面下滑到"GitHub Pages"，"Your site is published at "后就是GitHub Pages分配给你的仓库地址了。你可以直接通过这个地址访问你的仓库。
-          </p>
+          <h3>渐变</h3>
+          <p>在CSS中，background-image这样的属性，可以设为渐变。CSS中支持两种渐变，一种是线性渐变，一种是放射性渐变，我们先了解一下它们的基本用法：</p>
+          <p>线性渐变的写法是：linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+          <p>这里的direction可以是方向，也可以是具体的角度。例如："to bottom"、"to top"、"to left"、"to right"、"to bottom left"、"to bottom right"、"to top left"、"to top right"、"120deg"、"3.14rad"，这些都是合理的方向取值。</p>
+          <p>color-stop是一个颜色和一个区段，例如："rgba(255,0,0,0)"、"orange"、"yellow 10%"、"green 20%"、"lime 28px"</p>
+          <p>我们组合一下，产生一个“真正的金色”的背景：</p> 
+          <pre class="code">
+          <code>
+&lt;style&gt;
+  #grad1 {
+    height: 200px;
+    background: linear-gradient(45deg, gold 10%, yellow 50%, gold 90%);
+  }
+&lt;/style&gt;
+&lt;div id="grad1"&gt;&lt;/div&gt;
+          </code>
+          </pre>
+          <p>放射性渐变需要一个中心点和若干个颜色：radial-gradient(shape size at position, start-color, ..., last-color);</p>
+          <p></p>
         </section>
 
-        <section>
-          <h3>指定域名解析</h3>
-          <p>
-            若持有域名，可以通过“CNAME”记录解析到指定域名。
-          </p>          
-        </section>

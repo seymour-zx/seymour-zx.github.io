@@ -1,8 +1,8 @@
 
     <section>
-    <h2>如何利用GitHub Pages发布个人网站</h2>
+    <h2>收集常用的CSS颜色</h2>
     <hr />
     <h6>颐亲王&nbsp;&nbsp;正协信息客栈</h6>
-    <h6><time datetime="2020-12-02T13:32Z" pubdate="pubdate">发布于 2020-12-02T13:32Z</time></h6>
+    <h6><time datetime="2020-12-02T16:42Z" pubdate="pubdate">发布于 2020-12-02T16:42Z</time></h6>
     <hr />
     </section>

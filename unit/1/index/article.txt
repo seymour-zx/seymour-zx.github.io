@@ -1,49 +1,86 @@
 
         <section>
-          <h3>为什么要建设自己的个人网站？</h3>
-          <p>最直接的原因，就是突然感觉自己建设一个简单的网站，其实是不难实现的。</p>
-          <p>说实话，以前真的觉得很麻烦。即使各种重生现代都市的商业小说里，开局就来个架设导航网站的操作剧情。
-          看起来好像很容易复制，但设置服务器这些还是让我觉得很麻烦，打消了学习建站的念头。</p>
-          <p>2020年10月初，无意中看到了很多培训机构的招生广告，像什么“一天入门，一个星期掌握，一个月成神”，“进群免费学”之类的。</p>
-          <p>无论硬广还是软广，广告看多了，不禁要问自己，对于像我这种HTML零基础的新人来说，自建网站的愿望，到底难不难实现？怎么感觉好像“我也行！”？</p>
+          <h3>下载安装Git</h3>
+          <p></p>          
         </section>
-
         <section>
-          <h3>为什么选择"zhengxie.info"这个域名？</h3>
-          <p>怎么说呢，都是心血来潮的结果。查过域名注册信息的人肯定知道， "zhengxie.info" 这个域名是我在北京时间凌晨2点后通过"阿里云"注册的。</p>
-          <p>"zhengxie"是姓名的全拼，"zhengxie"这个字段还没被注册的域名真不多。".info"这个后缀，就是在尚可注册的域名里，挑选一个比较适合个人使用的。</p>
-          <p>中意域名的可选余地不大，但还能从中捡漏到"zhengxie.info"，我是感觉无比幸运的，因为我越来越喜欢这个域名。</p>
-        </section>
-
+          <h3>本地初始化配置</h3>
+          <p>$ git config --global user.name "seymour-zx"</p>
+          <p>$ git config --global user.email "seymour.zx@foxmail.com"</p>
+          <p>查看配置信息：$ git config --list</p>
+          <p>生成公共密钥：$ ssh-keygen -t rsa -C "seymour.zx@foxmail.com"</p>
+          <p>打开文件"id_rsa.pub"，全选复制。</p>
+          <p>登录GitHub账户，打开“Settings”，页面跳转后点击"SSH and GPG keys",选择绿框"New SHH Key"。</p>
+          <p>“Title”随意取名，“Key”则粘贴上文件"id_rsa.pub"的全部内容，然后点绿框“Add SSH Key”确认。</p>
+          <p>回到本地目标文件夹，右键开启"git bash"，输入“$ ssh -T git@github.com”，再输入“yes”确认。</p>
+          <p></p>
+        </section>        
         <section>
-          <h3>注册到心仪的域名，才更有动力去好好地经营自己的网站。</h3>
-          <p>一开始，我是在腾讯云选域名的，也是打算在腾讯云注册域名。但我现在也忘记为什么当时会选着选着，跑到阿里云选择域名，然后下载阿里云app注册了域名。</p>
-          <p>域名注册需要实名认证审核，通常需要3-5个工作日。我的域名注册代理商是阿里云（万网）。在挑选域名期间，可以先提交资料，弄一个实名信息认证的模板，审核也是需要3-5个工作日。购买域名时可以使用认证过的信息模板，可以省去等待时间。</p>
-          <p>我当时购买时，没使用模板。购买后认证时，让我先认证模板。等了三个工作日后，又让我等待域名实名认证，前后等了一个星期。可能我把顺序弄错，多等了三个工作日。但我不确定能否不认证模板，直接实名认证域名。</p>
+          <h3>快速推送</h3>
+          <p>$ git add --all</p>
+          <p>$ git commit -m "说明内容"</p>
+          <p>$ git push -u origin master</p>
+          <p></p>
         </section>
-
         <section>
-          <h3>注册GitHub账号, 使用GitHub Pages服务</h3>
-          <p>注册完成后登录账号，网页界面右上角区域，点击+标，下拉选单第一行"New repository"。</p>
-          <p>在"Repository name *"，按双引号内的各式填写：“所有者名称.github.io”</p>
-          <p>勾选"Add a README file"</p>
-          <p>再点击绿色按钮"Create repository"</p>
-          <p>页面跳转后，点击右边"Settings"，没看到"Settings"就先点"…"</p>
-          <p>下滑到"GitHub Pages", "Your site is published at "后就是你的网页了，（记住这个网址，下一步解析是用到）</p>
-          <p>鼠标滚轮再下滑，"Custom domain"，在框内填写你注册的域名，如"zhengxie.info"，然后点击"Save"完成保存。</p>
+          <h3>远程仓库相关命令</h3>
+          <p>克隆仓库：$ git clone https://github.com/seymour-zx/seymour-zx.github.io.git</p>
+          <p>查看远程仓库：$ git remote -v</p>
+          <p>添加远程仓库：$ git remote add [name] [url]</p>
+          <p>删除远程仓库：$ git remote rm [name]</p>
+          <p>修改远程仓库：$ git remote set-url --push[name][newUrl]</p>
+          <p>拉取远程仓库：$ git pull [remoteName] [localBranchName]</p>
+          <p>推送远程仓库：$ git push [remoteName] [localBranchName]</p>
+          <p></p>
         </section>
-
         <section>
-          <h3>等待审核好几天，终于可以解析域名了</h3>
-          <p>我是用阿里云注册域名的，这里用阿里云举例如何解析域名。</p>
-          <p>打开阿里云App，"管控"界面，下滑到"我的云产品"，点击"全部展开"</p>
-          <p>选择"云解析DNS"，在点击域名会自动跳到"解析列表"</p>
-          <p>点击屏幕右上角"+"，记录类型选择"CNAME"</p>
-          <p>主机记录：如果填@就是解析到本级域名，如https://zhengxie.info/ ，如果填"www"就是解析到相应的子级域名，如https://www.zhengxie.info/ 。</p>
-          <p>记录值：把GitHub给的地址填进去，（就是把上一步让记住的网址填进去）。</p>
-          <p>等10分钟左右，就能访问指定的域名了</p>
+          <h3>分支（branch）相关命令</h3>
+          <p>查看当前分支：$ git branch</p>
+          <p>查看远程分支：$ git branch -a</p>
+          <p>查看远程分支：$ git branch -r</p>
+          <p>创建本地分支：$ git branch [name]</p>
+          <p>git branck aaa（创建aaa分支）</p>
+          <p>切换分支：$ git checkout [name]</p>
+          <p>git checkout aaa（切换到aaa分支）</p>
+          <p>创建新分支并立即切换到新分支：$ git checkout -b [name]</p>
+          <p>git chechout -b aaa（创建本地aaa分支，同时切换到aaa分支。* 只有提交的时候才会在服务端上创建对应分支。）</p>
+          <p>删除已经参与了合并的分支：$ git branch -d [name]</p>
+          <p>强制删除分支：$ git branch -D [name]</p>
+          <p>将[name]分支合并到当前分支：$ git merge [name]</p>
+          <p>创建远程分支：$ git push origin [name]</p>
+          <p>删除远程分支：$ git push origin :heads/[name]</p>
+          <p>查看本地分支文件信息，确保更新时不产生冲突：$ git status</p>
+          <p></p> 
         </section>
-
-        <h6>*本文于2020年10月25日，首发于<a href="https://zhuanlan.zhihu.com/p/268496617/" title="移步访问知乎">知乎</a>，将根据实际情况，不定期更新。</h6>
-        <h6>*于2020年11月29日起，同步更新于"zhengxie.info"。</h6>
-        <h6>*欢迎您访问颐亲王的知乎页面，或移步作客颐亲王的小栈。</h6>
+        <section>
+          <h3>版本（tag）相关命令</h3>
+          <p>查看版本：$ git tag</p>
+          <p>创建版本：$ git tag [name]</p>
+          <p>删除版本：$ git tag -d [name]</p>
+          <p>查看远程版本：$ git tag -r</p>
+          <p>创建远程版本：$ git push origin [name]</p>
+          <p>删除远程版本：$ git push origin :refs/tags/[name]</p>
+          <p></p>
+        </section>
+        <section>
+          <h3>子模块(submodule)相关命令</h3>
+          <p>添加子模块：$ git submodule add [url] [path]</p>
+          <p>初始化子模块：$ git submodule init（只需在克隆仓库后运行一次就行）</p>
+          <p>更新子模块：$ git submodule update（更新或切换分支后都需要运行）</p>
+          <p>分4步删除子模块：
+            <br />$ git rm --cached [path]
+            <br />编辑“.gitmodules”文件，将子模块的相关配置节点删除掉
+            <br />编辑“.git/config”文件，将子模块的相关配置节点删除掉
+            <br />手动删除子模块残留的目录
+          </p>
+        </section>
+        <section>
+          <h3>忽略一些文件、文件夹不提交</h3>
+          <p>
+            在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
+          </p>
+          <p>target</p>
+          <p>bin</p>
+          <p>*.db</p>
+        </section>
+        <section>
