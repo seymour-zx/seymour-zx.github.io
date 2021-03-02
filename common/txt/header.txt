@@ -19,7 +19,7 @@
       <table class="menu">
         <tr>
           <td>
-            <a href="https://zhengxie.info/" title="" target="_self">首页</a>
+            <a href="https://zhengxie.info/base/homepage/" title="" target="_self">主页</a>
           </td>
           <td>
             <a href="https://zhengxie.info/base/about/" title="" target="_self">关于</a>

@@ -1,6 +1,0 @@
-
-        <hr /><h1>主页</h1><hr />
-        <section>
-          <h3></h3>
-          <p></p>
-        </section>

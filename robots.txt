@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /index/
+
+Sitemap: https://zhengxie.info/sitemap.xml
