@@ -48,9 +48,9 @@ header {background-color: rgba(130,36,30,1); align-items: center; justify-conten
     .menu tr {border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1);}
 main {width: 100%; display: flex; align-items: center; justify-content:center;}
   article {width: 100%; min-height: calc(100vh - 149px); margin: auto; background-color: rgba(244,241,237,0.8);}
-  article > section {margin-left: 1rem; margin-right: 1rem;}
-  article h1, article h2, article h3, article h6, article p {color: rgba(3,2,4,1);}
-  article h1 {text-align:center;}
+  article h1, article h2, article h3, article h4, article h5, article h6, article p {color: rgba(3,2,4,1);}
+  article > * {margin-left: 1rem; margin-right: 1rem;}
+  article section {margin-left: 1rem; margin-right: 1rem;}
   article h6 {margin-top: 3px; margin-bottom: 3px;}
   code {color: rgba(3,2,4,1);} 
   pre.code {
@@ -71,6 +71,8 @@ main {width: 100%; display: flex; align-items: center; justify-content:center;}
       text-decoration: none;
       color: rgba(244,241,237,1);
     }
+
+/* bookmark专属 */
   .bookmark {margin: 0;}
     .bookmark input[type="checkbox"] {/*隐藏复选框*/display: none;}
     .bookmark input:checked + div {/*隐藏div初始化*/display: none;}
@@ -102,6 +104,8 @@ main {width: 100%; display: flex; align-items: center; justify-content:center;}
       padding: 6px;    
       border-left: 1px solid rgba(37,86,122,1);
     }
+/* bookmark专属 */
+
 footer {width: 100%;}
   footer > div {display: flex; align-items: center; justify-content:center; text-align: center;
     color: rgba(244,241,237,1);
@@ -109,7 +113,7 @@ footer {width: 100%;}
   footer a {
     color: rgba(244,241,237,1);
     text-decoration: none;}
-@media only screen and (min-width: 688px){
+@media only screen and (min-width: 699px){
   header {display: flex;}
     .menu {min-width: 61.8%;}
   article {width: 61.8%; min-height: calc(100vh - 105px);}}

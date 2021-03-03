@@ -122,7 +122,7 @@ def info_link(filename, indexdir, txtdir, htmldir):
 
 def info_article(filename, indexdir, txtdir, htmldir, datetime):
 # 'article.html'
-    message = ''
+    message = '\n      <h2></h2><section>\n        <p></p>\n        <h3></h3><section>\n          <p></p>\n          <h4></h4><section>\n            </section>\n          </section>\n        <h3></h3><section>\n          <p></p>\n          </section>\n        </section>\n'
     path = openpath(filename, indexdir)
     if os.path.exists(path):
         message = frinfo(filename, indexdir)
@@ -131,18 +131,19 @@ def info_article(filename, indexdir, txtdir, htmldir, datetime):
     info = ''
     infolist = []
     infolist.append('\n    <article>')
-    infolist.append('\n      <hr />')
     infolist.append('\n      <h1>' + frinfo('title.txt', indexdir) + '</h1>')
     infolist.append('\n      <hr />')
     # 特殊
-    if not htmldir.find("/unit/")==-1:
-        infolist.append('\n      <h4>朝颐亲王 | 正协信息客栈</h4>')
+    if not htmldir.find("/unit/")==-1:        
+        infolist.append('\n      <section>')
+        infolist.append('\n      <h6>华朝颐亲王 | 正协信息客栈</h6>')
         path = openpath('datetime.txt', indexdir)
         if not os.path.exists(path):
             fwinfo(path, datetime)
-            infolist.append('\n      <h4>发布于：' + datetime +'</h4>\n      <hr />\n')
+            infolist.append('\n      <h6>发布于：' + datetime +'</h6>\n      <hr />\n')
         else:
-            infolist.append('\n      <h4>发布于：' + frinfo('datetime.txt', indexdir) +'</h4>\n      <hr />\n')
+            infolist.append('\n      <h6>发布于：' + frinfo('datetime.txt', indexdir) +'</h6>\n      <hr />\n')
+        infolist.append('\n      </section>')
     infolist.append(message)    
     infolist.append('\n    </article>')
     for i in range(len(infolist)):
