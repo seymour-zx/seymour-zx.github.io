@@ -188,6 +188,8 @@ def creat_html(htmldir, indexdir, txtdir, datetime):
         infolist.append('\n  <main class="unit">\n')
     elif not htmldir.find("/homepage")==-1:
         infolist.append('\n  <main class="homepage">\n')
+    elif htmldir=='../../':
+        infolist.append('\n  <main class="homepage">\n')
     elif not htmldir.find("/base/")==-1:
         infolist.append('\n  <main class="base">\n')
     else:
@@ -212,7 +214,36 @@ def creat_html(htmldir, indexdir, txtdir, datetime):
             fw.writelines(infolist[i])
     print(path)
     # 在默认浏览器中打开html文件
-    webbrowser.open(path,new = 0, autoraise=True)
+    # webbrowser.open(path,new = 0, autoraise=True)
+
+def upunit():
+# 更新目录
+    n = 1
+    s = '../../unit/' + str(n)
+    info = ''
+    infolist = []
+    infolist.append('      <table class="unit">\n')
+    while os.path.exists(s):
+        indexdir = openpath('index', s)
+        message1 = frinfo('datetime.txt', indexdir)
+        message2 = frinfo('title.txt', indexdir)
+        infolist.append('        <tr>\n          <td>')
+        infolist.append(message1[0:10])
+        infolist.append('</td>\n')
+        infolist.append('          <td><a href="https://zhengxie.info/unit/' + str(n) +'/"')
+        infolist.append(' title="" target="_self">')
+        infolist.append(message2)
+        infolist.append('</a></td>\n        </tr>\n')
+        print(indexdir, message1[0:10], message2)
+        n = n + 1
+        s = '../../unit/' + str(n)
+    infolist.append('      </table>')
+    for i in range(len(infolist)):
+        info = info + infolist[i]
+    path = openpath('article.html', '../../index/')
+    fwinfo(path, info)
+    path = openpath('article.html', '../../base/homepage/index/')
+    fwinfo(path, info)
 
 def execute():
 # 执行
@@ -223,6 +254,10 @@ def execute():
     # 读取目录列表
     dirtxt = openpath('dirtxt.txt', txtdir)
     htmllist, indexlist = dirlist(dirtxt=dirtxt)
+    for n in range(len(htmllist)):
+        creat_html(htmldir=htmllist[n], indexdir=indexlist[n], txtdir=txtdir, datetime=datetime)
+    # 更新目录
+    upunit()
     for n in range(len(htmllist)):
         creat_html(htmldir=htmllist[n], indexdir=indexlist[n], txtdir=txtdir, datetime=datetime)
 
@@ -242,7 +277,7 @@ if __name__ == '__main__':
         print(pydir)
         print('......当前运行目录：')
         print(os.getcwd())
-    pydir = input("\n......程序执行完毕！......\n......按Enter关闭窗口......")
+    # pydir = input("\n......程序执行完毕！......\n......按Enter关闭窗口......")
     """
     # 网址拼接
 

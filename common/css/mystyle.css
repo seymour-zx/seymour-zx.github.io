@@ -104,6 +104,18 @@ main.unit article > * {margin-left: 1rem; margin-right: 1rem;}
 main.base article > * {margin-left: 1rem; margin-right: 1rem;}
   main.base h1 {text-align: center;
 }/* main.base基础专属 */
+main.homepage article > * {margin-left: 1rem; margin-right: 1rem;}
+  main.homepage h1 {text-align: center;}
+  main.homepage table.unit td + td {width: 100%;}
+  main.homepage table.unit td {
+    color: rgba(244,241,237,1);
+    background-color: rgba(37,86,122,1);
+    padding-top: 3px;
+    padding-bottom: 3px;}  
+    main.homepage table.unit a {
+    text-decoration: none;
+    color: rgba(244,241,237,1);
+}/* main.homepage目录专属 */
 @media only screen and (min-width: 699px){
 /* @media only screen and (orientation : landscape) {横屏(orientation : landscape)} */
 /* @media only screen and (orientation : portrait) {竖屏(orientation : portrait)} */
@@ -121,14 +133,3 @@ main.base article > * {margin-left: 1rem; margin-right: 1rem;}
     color: rgba(244,241,237,1);
     text-decoration: none;
 }
-table.unit {/* 目录 */width: 100%;}
-  table.unit td + td {width: 100%;}
-  table.unit td {
-    color: rgba(244,241,237,1);
-    background-color: rgba(37,86,122,1);
-    padding-top: 3px;
-    padding-bottom: 3px;}  
-  table.unit a {
-    text-decoration: none;
-    color: rgba(244,241,237,1);
-}/* 目录 */
