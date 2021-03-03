@@ -65,7 +65,7 @@ def info_title(filename, indexdir, txtdir):
 
 def info_keywords(filename, indexdir, txtdir):
 # 'keywords.txt'
-    message = '正协, 华朝颐亲王'
+    message = '华朝颐亲王, 正协信息客栈'
     path = openpath(filename, indexdir)
     if os.path.exists(path):
         message = frinfo(filename, indexdir)
@@ -76,7 +76,7 @@ def info_keywords(filename, indexdir, txtdir):
     infolist.append('\n')
     infolist.append(frinfo(filename, txtdir))
     infolist.append(message)
-    infolist.append('" />')
+    infolist.append('" />\n')
     for i in range(len(infolist)):
        info = info + infolist[i]
     return info
@@ -94,7 +94,7 @@ def info_description(filename, indexdir, txtdir):
     infolist.append('\n')
     infolist.append(frinfo(filename, txtdir))
     infolist.append(message)
-    infolist.append('" />')
+    infolist.append('" />\n')
     for i in range(len(infolist)):
        info = info + infolist[i]
     return info
@@ -118,11 +118,12 @@ def info_link(filename, indexdir, txtdir, htmldir):
         infolist.append('" rel="stylesheet" type="text/css" />\n    <!--调用css样式-->\n')
         for i in range(len(infolist)):
             info = info + infolist[i]
+        fwinfo(path, info)
     return info
 
 def info_article(filename, indexdir, txtdir, htmldir, datetime):
 # 'article.html'
-    message = '\n      <h2></h2><section>\n        <p></p>\n        <h3></h3><section>\n          <p></p>\n          <h4></h4><section>\n            </section>\n          </section>\n        <h3></h3><section>\n          <p></p>\n          </section>\n        </section>\n'
+    message = '<h2></h2>\n<h3></h3>\n<h4></h4>\n<section></section>\n<p></p>\n<pre><code></code></pre>\n<hr />\n'
     path = openpath(filename, indexdir)
     if os.path.exists(path):
         message = frinfo(filename, indexdir)
@@ -132,18 +133,17 @@ def info_article(filename, indexdir, txtdir, htmldir, datetime):
     infolist = []
     infolist.append('\n    <article>')
     infolist.append('\n      <h1>' + frinfo('title.txt', indexdir) + '</h1>')
-    infolist.append('\n      <hr />')
     # 特殊
-    if not htmldir.find("/unit/")==-1:        
-        infolist.append('\n      <section>')
-        infolist.append('\n      <h6>华朝颐亲王 | 正协信息客栈</h6>')
+    if not htmldir.find("/unit/")==-1:
+        infolist.append('\n      <h6>华朝颐亲王 | 正协信息客栈 | ')
         path = openpath('datetime.txt', indexdir)
         if not os.path.exists(path):
             fwinfo(path, datetime)
-            infolist.append('\n      <h6>发布于：' + datetime +'</h6>\n      <hr />\n')
+            infolist.append(datetime)
         else:
-            infolist.append('\n      <h6>发布于：' + frinfo('datetime.txt', indexdir) +'</h6>\n      <hr />\n')
-        infolist.append('\n      </section>')
+            infolist.append(frinfo('datetime.txt', indexdir))
+        infolist.append('</h6>\n')
+    infolist.append('      <hr />\n')
     infolist.append(message)    
     infolist.append('\n    </article>')
     for i in range(len(infolist)):
@@ -154,9 +154,9 @@ def info_footer(txtdir, datetime):
 # 'footer.txt'
     path = openpath('footer.txt', txtdir)    
     infolist = []
-    infolist.append('\n  <footer>\n    <!-- 站点更新 -->\n    <div>\n      |&nbsp;\n      &lt;&nbsp;\n      站点更新：')
+    infolist.append('\n  <footer>\n    <!-- 上次维护 -->\n    <div>\n      |&nbsp;\n      &lt;&nbsp;\n      上次维护：')
     infolist.append(datetime)
-    infolist.append('\n      &nbsp;&gt;\n      &nbsp;|\n    </div>\n    <!-- /站点更新 -->\n  </footer>')
+    infolist.append('\n      &nbsp;&gt;\n      &nbsp;|\n    </div>\n    <!-- /上次维护 -->\n  </footer>')
     info = ''
     for i in range(len(infolist)):
         info = info + infolist[i]
@@ -164,9 +164,6 @@ def info_footer(txtdir, datetime):
 
 def creat_html(htmldir, indexdir, txtdir, datetime):
 # 创建index.html文件
-    path = openpath('index.html', htmldir)
-    path = os.path.abspath(path)
-    print(".......开始编写：\n", path)
     infolist = []
     # 通用
     infolist.append(frinfo("head.txt", txtdir))
@@ -184,32 +181,44 @@ def creat_html(htmldir, indexdir, txtdir, datetime):
     infolist.append(frinfo("body.txt", txtdir))
     # 通用
     infolist.append(frinfo("header.txt", txtdir))
-    # 通用
-    infolist.append('\n  <main>')
     # 个性化
-    if not htmldir.find("/bookmark")==-1:
+    if not htmldir.find("/private/bookmark")==-1:
+        infolist.append('\n  <main class="bookmark">\n')
+    elif not htmldir.find("/unit/")==-1:
+        infolist.append('\n  <main class="unit">\n')
+    elif not htmldir.find("/homepage")==-1:
+        infolist.append('\n  <main class="homepage">\n')
+    elif not htmldir.find("/base/")==-1:
+        infolist.append('\n  <main class="base">\n')
+    else:
+        infolist.append('\n  <main>\n')        
+    # 个性化
+    if not htmldir.find("/unit/")==-1:
+        infolist.append(info_article(filename='article.html', indexdir=indexdir, txtdir=txtdir, htmldir=htmldir, datetime=datetime))
+    elif not htmldir.find("/bookmark")==-1:
         infolist.append(frinfo('article.html', indexdir))
     else:
         infolist.append(info_article(filename='article.html', indexdir=indexdir, txtdir=txtdir, htmldir=htmldir, datetime=datetime))
-    # 通用filename='article.html', indexdir=indexdir
-    infolist.append('\n  </main>')
+    # 通用
+    infolist.append('\n  </main>\n')
     # 通用
     infolist.append(frinfo("footer.txt", txtdir))
     # 通用
     infolist.append(frinfo("html.txt", txtdir))
-
+    path = openpath('index.html', htmldir)
+    path = os.path.abspath(path)
     with open(path, 'w', encoding='utf-8') as fw:
         for i in range(len(infolist)):
             fw.writelines(infolist[i])
+    print(path)
     # 在默认浏览器中打开html文件
     webbrowser.open(path,new = 0, autoraise=True)
 
 def execute():
 # 执行
-    print('......默认目录正确！\n')
-    txtdir = '../txt'
-    print('......指定存放txt文件的目录:', txtdir)
     datetime = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
+    txtdir = '../txt'
+    print('......指定存放txt文件的目录:', txtdir)    
     info_footer(txtdir=txtdir, datetime=datetime)
     # 读取目录列表
     dirtxt = openpath('dirtxt.txt', txtdir)
@@ -218,23 +227,22 @@ def execute():
         creat_html(htmldir=htmllist[n], indexdir=indexlist[n], txtdir=txtdir, datetime=datetime)
 
 if __name__ == '__main__':
-    print('......cmd命令目录：')
     cmddir = 'D:\\Workspace'
-    print(cmddir)
-    print('......py存放目录：')
     pydir = 'D:\\Workspace\\Html\\seymour-zx.github.io\\common\\py'
-    print(pydir)
-    print('......判断默认目录：')
-    if os.getcwd()==cmddir:
-        # 切换目录
+    print('......判断运行目录......')
+    if os.getcwd()==cmddir or os.getcwd()==pydir:
+        print('......运行目录正确！......')
         os.chdir(pydir)
         execute()
-    elif os.getcwd()==pydir:
-        execute()
     else:
-        print("......运行目录错误！")
-        print("......当前运行目录：\n", os.getcwd())
-    # pydir = input("\n......\n程序执行完毕！\n按Enter关闭窗口...")
+        print('......运行目录错误！......')
+        print('......cmd命令目录：')
+        print(cmddir)
+        print('......py存放目录：')       
+        print(pydir)
+        print('......当前运行目录：')
+        print(os.getcwd())
+    pydir = input("\n......程序执行完毕！......\n......按Enter关闭窗口......")
     """
     # 网址拼接
 
