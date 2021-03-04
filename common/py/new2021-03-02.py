@@ -227,7 +227,7 @@ def upunit():
         indexdir = openpath('index', s)
         message1 = frinfo('datetime.txt', indexdir)
         message2 = frinfo('title.txt', indexdir)
-        infolist.append('        <tr>\n          <td>')
+        infolist.append('        <tr>\n          <td nowrap="nowrap">')
         infolist.append(message1[0:10])
         infolist.append('</td>\n')
         infolist.append('          <td><a href="https://zhengxie.info/unit/' + str(n) +'/"')
