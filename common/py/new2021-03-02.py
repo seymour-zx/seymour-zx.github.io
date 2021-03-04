@@ -218,24 +218,25 @@ def creat_html(htmldir, indexdir, txtdir, datetime):
 
 def upunit():
 # 更新目录
-    n = 1
+    n = 999
     s = '../../unit/' + str(n)
     info = ''
     infolist = []
     infolist.append('      <table class="unit">\n')
-    while os.path.exists(s):
-        indexdir = openpath('index', s)
-        message1 = frinfo('datetime.txt', indexdir)
-        message2 = frinfo('title.txt', indexdir)
-        infolist.append('        <tr>\n          <td nowrap="nowrap">')
-        infolist.append(message1[0:10])
-        infolist.append('</td>\n')
-        infolist.append('          <td><a href="https://zhengxie.info/unit/' + str(n) +'/"')
-        infolist.append(' title="" target="_self">')
-        infolist.append(message2)
-        infolist.append('</a></td>\n        </tr>\n')
-        print(indexdir, message1[0:10], message2)
-        n = n + 1
+    while not n==0:
+        if os.path.exists(s):
+            indexdir = openpath('index', s)
+            message1 = frinfo('datetime.txt', indexdir)
+            message2 = frinfo('title.txt', indexdir)
+            infolist.append('        <tr>\n          <td nowrap="nowrap">')
+            infolist.append(message1[0:10])
+            infolist.append('</td>\n')
+            infolist.append('          <td><a href="https://zhengxie.info/unit/' + str(n) +'/"')
+            infolist.append(' title="" target="_self">')
+            infolist.append(message2)
+            infolist.append('</a></td>\n        </tr>\n')
+            print(indexdir, message1[0:10], message2)
+        n = n - 1
         s = '../../unit/' + str(n)
     infolist.append('      </table>')
     for i in range(len(infolist)):
