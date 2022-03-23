@@ -1,0 +1,53 @@
+
+    <!--脚本-->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.portal-box').children("input[type='checkbox']").click(function(){
+                $(this).parent().prevAll().children(":checked").click();
+                $(this).parent().nextAll().children(":checked").click();
+                $(this).nextAll().find(":checked").click();
+                if($(this).is($(".box-lv1").children())){}
+                else {
+                    if($(this).is(":checked")){
+                        $(this).parent().prevAll().css("display","none");
+                        $(this).parent().nextAll().css("display","none");
+                    }
+                    else {                        
+                        $(this).parent().prevAll(".div_img-a").css("display","inline-flex");
+                        $(this).parent().nextAll(".div_img-a").css("display","inline-flex"); 
+                        $(this).parent().prevAll(".portal-box").css("display","block");
+                        $(this).parent().nextAll(".portal-box").css("display","block"); 
+                    }
+                }
+            });                        
+            $("button").click(function(){
+                $(this).next().children("[type='search']").val(document.getElementById("search-input").value);
+                $(this).next().children("[type='submit']").click();
+            });
+        });
+        // else if($(this).is(":not(:checked)")){ }
+        // $(this).parent()[0].scrollIntoView(true);
+        // $(":checked").not(this).click();
+        // $(this).prevAll().$(":checked").click();
+        // $(this).nextAll().$(":checked").click();
+        // $(this).children().$(":checked").click();
+        // if($(this).is(":checked")){ $("#portal-box").children().css("flex","auto"); } else if($(this).is(":not(:checked)")){ }
+        // $('.keyword-lv1').css('width','358px');
+        // $(":checked").parent().css('width','100%');
+    </script>
+
+
+    <!--百度统计-->
+    <script async type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?70e38224e5ebd850150b00a19835a25f";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</body>
+</html>

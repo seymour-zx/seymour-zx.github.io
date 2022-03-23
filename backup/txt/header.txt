@@ -1,0 +1,39 @@
+
+    <!-- 页首 -->
+    <header>
+
+        <!-- .plaque 匾额 -->
+        <div class="plaque-box">
+            <table class="plaque">
+                <tr>
+                    <td class="logo" rowspan="3"></td>
+                    <td colspan="3">颐亲王的小栈</td>
+                </tr>
+                <tr class="mid">
+                    <td>正协</td>
+                    <td class="mid">信<br />息</td>
+                    <td>客栈</td>
+                </tr>
+                <tr><td colspan="3">Z H E N G X I E . I N F O</td></tr>
+            </table> 
+        </div><!-- // .plaque 匾额 -->
+
+        <!-- .menu 菜单 -->
+        <table class="menu">
+            <tr>
+                <td>
+                    <a href="https://zhengxie.info/" target="_self">首页</a>
+                </td>
+                <td>
+                    <a href="https://zhengxie.info/base/about/" target="_self">关于</a>
+                </td>
+                <td>
+                    <a href="https://zhengxie.info/base/sitemap/" target="_self">目录</a>
+                </td>
+                <td>
+                    <a href="https://zhengxie.info/private/" target="_self">私签</a>
+                </td>
+            </tr>
+        </table><!-- // .menu 菜单 --> 
+
+    </header>

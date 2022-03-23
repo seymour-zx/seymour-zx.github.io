@@ -1,0 +1,179 @@
+/* vertical-align: middle !important; align-items: center; justify-content: center; */
+/* 横屏 *//* @media only screen and (orientation : landscape) {} */
+/* 竖屏 *//* @media only screen and (orientation : portrait) {} */
+/* @media only screen and (min-width: 750px) {} */
+/* @media only screen and (max-width: 750px) {} */
+p {
+    word-break: break-all;
+    line-height: 1.5rem;
+}
+sup { vertical-align: text-top; }
+img { vertical-align: middle }
+sub { vertical-align: text-bottom; }
+pre.code { color: rgba(244,241,237,1); background-color: rgba(64,144,113,1); overflow: auto; max-height: 38.2vh; }
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    /* background-image: url(../image/background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center; */
+    /* color: rgba(3,2,4,1); */
+    font-family: '宋体', -apple-system, 'Times New Roman', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 页首 */
+header {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 8rem;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content:space-around;
+    background-color: rgba(130,36,30,1);
+    user-select: none;
+}
+    /* 匾额 */
+    div.plaque-box {
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: none;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle !important;
+    }
+    table.plaque, table.plaque tr, table.plaque td {
+        margin: 0;
+        padding: 0;
+        border: none;    
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle !important;
+    }
+    table.plaque { border-collapse: collapse; border-spacing: 0; color: rgba(243,215,55,1); }
+    table.plaque td.logo { width: 4.75rem; height: 4.75rem; background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url(../image/favicon.ico); }
+    table.plaque td.logo + td { text-align-last: justify; }
+    table.plaque tr.mid { font-size: 2rem; font-weight: bolder; border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1); }
+    table.plaque td.mid { font-size: 1rem;  font-weight: lighter;  color: rgba(244,241,237,1); }
+    /* \\ 匾额 */
+
+    /* 菜单 */
+    table.menu, table.menu tr, table.menu td {
+        margin: 0;
+        padding: 0;
+        border: none;    
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle !important;
+    }
+    table.menu {  width: 90%; min-width: 318px; max-width: 818px;  font-size: 1.25rem; line-height: 2rem; border-collapse: collapse; border-spacing: 0; border-top: 1px solid rgba(244,241,237,1); border-bottom: 1px solid rgba(244,241,237,1); }
+    table.menu a { color: rgba(244,241,237,1); text-decoration: none; }
+    table.menu a:hover { color: rgba(243,215,55,1); text-decoration: underline; }
+    /* \\ 菜单 */
+/* \\ 页首 */
+
+
+/* 页面核心 */
+div.core {
+    width: 100%;
+    min-height: calc(100% - 232px);
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    /* width: 95%; */
+    /* min-width: 358px; */
+    width: 100%;
+    max-width: 1024px;
+    min-height: 100%;
+    background-color: rgba(244,241,237,0.8);
+}
+/* \\ 页面核心 */
+
+
+/* 广告 */
+div.ad {
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+/* \\ 广告 */
+
+
+/* 页底 */
+footer {
+    width: 100%;
+    color: rgba(244,241,237,1); background-color: rgba(37,86,122,1);
+    user-select: none;
+}
+div.in-footer-box {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+div.in-footer-box a {
+    color: rgba(244,241,237,1);
+    text-decoration: none;
+}
+/* \\ 页底 */
+
+
+/* 文章 */
+.title {
+    text-align: center;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.title h1 { display: inline-block; text-align: left; }
+article {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+article h2 { display: list-item; list-style-position: inside; list-style-type: upper-roman; }
+article p {
+    text-indent: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+div.in-p-box {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* \\ 文章 */
